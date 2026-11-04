@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd Store</title>
+    <meta
+      name="description"
+      content="Caso de estudio del proyecto FrontEnd Store (Código de Estilo): tienda web de poleras para desarrolladores maquetada con HTML5 semántico, CSS3 Grid, Flexbox y Responsive Design."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="imagenes/logo_fer_fav_icon.jpg">
+  </head>
+
+  <body>
+    <div class="case-page-wrapper">
+      <!-- ==================================================================
+           HEADER / NAVEGACIÓN
+           ================================================================== -->
+      <header id="site-header" class="site-header">
+        <div class="nav-container">
+          <a href="index.html" class="brand-link">
+            <div class="brand-logo-box">
+              <img src="imagenes/logo%20fer.jpg" alt="FC logo" class="brand-logo-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-subtitle">UX Engineer</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav hidden-mobile">
+            <a href="index.html#inicio" class="nav-link">Inicio</a>
+            <a href="index.html#especialidades" class="nav-link">Especialidades</a>
+            <a href="index.html#proyectos" class="nav-link active">Proyectos</a>
+            <a href="index.html#contacto" class="nav-link">Contacto</a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg id="icon-menu" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            <svg id="icon-close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display: none;">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <a href="index.html#inicio" class="mobile-nav-link">Inicio</a>
+          <a href="index.html#especialidades" class="mobile-nav-link">Especialidades</a>
+          <a href="index.html#proyectos" class="mobile-nav-link active">Proyectos</a>
+          <a href="index.html#contacto" class="mobile-nav-link">Contacto</a>
+        </div>
+      </header>
+
+      <!-- ==================================================================
+           MAIN CONTENT — CASO DE ESTUDIO PROYECTO 06 (FRONTEND STORE)
+           ================================================================== -->
+      <main>
+        <!-- 1. HERO DEL PROYECTO -->
+        <section class="case-hero">
+          <div class="case-hero-glow"></div>
+
+          <div class="case-container">
+            <a href="index.html#proyectos" class="case-back-btn">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              Volver a proyectos
+            </a>
+
+            <h1 class="case-title">FrontEnd Store</h1>
+            <p class="case-subtitle">Tienda virtual «Código de Estilo»</p>
+
+            <div class="case-tags-bar">
+              <span class="case-primary-pill">
+                <span class="case-primary-dot"></span>
+                Desarrollo Front-End
+              </span>
+              <span class="case-tags-divider"></span>
+              <span class="case-tech-pill">HTML5</span>
+              <span class="case-tech-pill">CSS3</span>
+              <span class="case-tech-pill">CSS Grid &amp; Flexbox</span>
+              <span class="case-tech-pill">Responsive Design</span>
+              <span class="case-tech-pill">Netlify</span>
+            </div>
+
+            <!-- Imagen Principal Hero del Proyecto -->
+            <div class="case-hero-banner reveal">
+              <!-- MULTIMEDIA: Coloca aquí la ruta de la imagen principal del proyecto (ej. src="imagenes/frontendstore-hero.png") -->
+              <img src="imagenes/6Tienda/bannerI.jpg" alt="Portada Sitio web FrontEnd Store" class="case-hero-img" />
+              <div class="case-banner-overlay"></div>
+              <span class="case-banner-badge">DISEÑO WEB · DESARROLLO FRONT-END</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. RESUMEN + FICHA TÉCNICA -->
+        <section class="case-overview-section">
+          <div class="case-container">
+            <div class="case-overview-grid reveal">
+              <div>
+                <span class="case-summary-label">RESUMEN</span>
+                <p class="case-summary-lead">
+                  Proyecto práctico de maquetación y desarrollo web creado para reforzar habilidades en HTML5 semántico, CSS3 y Responsive Design mediante la construcción de «FrontEnd Store — Código de Estilo», una tienda especializada en poleras para programadores inspiradas en los lenguajes y tecnologías más populares.
+                </p>
+              </div>
+
+              <div class="case-meta-card">
+                <div class="case-meta-grid">
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ROL</span>
+                    <div class="case-meta-value">Diseño y Maquetación Web</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">TIPO</span>
+                    <div class="case-meta-value">E-Commerce Front-End</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">STACK</span>
+                    <div class="case-meta-value">HTML5 · CSS3 · Responsive</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ESTADO</span>
+                    <div class="case-meta-value">En línea</div>
+                  </div>
+                </div>
+
+                <!-- ENLACE AL SITIO EN VIVO: Coloca aquí la URL en href="" -->
+                <a href="https://tienda-front-end-store-fvcg.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-case-visit">
+                  Ir al sitio
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. CUERPO DEL CASO DE ESTUDIO (ÍNDICE LATERAL + SECCIONES 01, 02, 03) -->
+        <section class="case-body-section">
+          <div class="case-container">
+            <div class="case-body-grid">
+              <!-- Índice lateral sticky -->
+              <aside class="case-toc" aria-label="Índice del proyecto">
+                <a href="#problema" class="case-toc-link active" data-case-section="problema">
+                  <span class="case-toc-num">01</span>
+                  El planteamiento
+                </a>
+                <a href="#proceso" class="case-toc-link" data-case-section="proceso">
+                  <span class="case-toc-num">02</span>
+                  Proceso y maquetación
+                </a>
+                <a href="#conclusiones" class="case-toc-link" data-case-section="conclusiones">
+                  <span class="case-toc-num">03</span>
+                  Conclusiones
+                </a>
+              </aside>
+
+              <!-- Columna de contenido -->
+              <div class="case-content-col">
+                <!-- 01. Definición del problema / planteamiento -->
+                <article id="problema" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">01</span>
+                    <h2 class="case-block-title">Moda para desarrolladores en una vitrina digital adaptable</h2>
+                  </div>
+
+                  <p class="case-paragraph">
+                    Bajo el concepto de <strong>«Código de Estilo»</strong>, el proyecto plantea una tienda especializada en poleras para programadores que rinden homenaje a los lenguajes y tecnologías más populares del desarrollo web: VueJS, AngularJS, React, Redux, Node.js, SASS, HTML5, GitHub, Bulma, TypeScript, Drupal, JavaScript, GraphQL y WordPress.
+                  </p>
+                  <p class="case-paragraph">
+                    El objetivo técnico principal fue consolidar el dominio de <strong>HTML, CSS y Responsive Design</strong> estructurando un escaparate de productos limpio, navegación clara entre las vistas de <em>Tienda</em> y <em>Nosotros</em>, y grillas adaptables que mantuvieran la proporción visual en cualquier tamaño de pantalla.
+                  </p>
+
+                  <div class="case-question-box">
+                    <span class="case-question-mark">“</span>
+                    <span class="case-question-tag">EL RETO DE MAQUETACIÓN</span>
+                    <p class="case-question-quote">
+                      “¿Cómo estructurar un catálogo de productos y la identidad de una tienda para desarrolladores aplicando HTML semántico, CSS Grid y diseño responsivo?”
+                    </p>
+                  </div>
+                </article>
+
+                <!-- 02. Proceso y solución -->
+                <article id="proceso" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">02</span>
+                    <h2 class="case-block-title">Proceso y estructura del sitio</h2>
+                  </div>
+
+                  <div class="case-process-list">
+                    <div class="case-process-item">
+                      <div class="case-process-badge">01</div>
+                      <div>
+                        <h3 class="case-process-title">Estructura semántica en HTML5 y navegación</h3>
+                        <p class="case-process-desc">
+                          Organización limpia del encabezado con el logotipo de FrontEnd Store, barra de navegación principal (Tienda / Nosotros), grillas de productos, bloques informativos y pie de página.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">02</div>
+                      <div>
+                        <h3 class="case-process-title">Catálogo «Nuestros Productos» con CSS Grid</h3>
+                        <p class="case-process-desc">
+                          Construcción de la grilla de 14 poleras temáticas (VueJS, AngularJS, React, Redux, Node, SASS, HTML, GitHub, Bulma, TS, Drupal, JS, GraphQL y WordPress, cada una con su nombre y precio de 40 Bs.) combinada con bloques gráficos destacados dentro del flujo del grid.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">03</div>
+                      <div>
+                        <h3 class="case-process-title">Sección «Nosotros» · Historia de Código de Estilo</h3>
+                        <p class="case-process-desc">
+                          Diseño de una vista editorial que presenta la historia de «Código de Estilo» acompañada de fotografía destacada (polera Redux), transmitiendo cómo la tienda fusiona creatividad, humor y pasión por el código.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">04</div>
+                      <div>
+                        <h3 class="case-process-title">Bloque «¿Por qué comprar con nosotros?»</h3>
+                        <p class="case-process-desc">
+                          Maquetación de los cuatro pilares de valor de la tienda: <strong>El Mejor Precio</strong> (ofertas de alto valor), <strong>Para Devs</strong> (colección exclusiva pensada en desarrolladores), <strong>Envío Gratis</strong> (entrega sin cargo extra) y <strong>La Mejor Calidad</strong> (materiales premium y duraderos).
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">05</div>
+                      <div>
+                        <h3 class="case-process-title">Responsive Design y despliegue en Netlify</h3>
+                        <p class="case-process-desc">
+                          Uso de media queries, unidades relativas y variables CSS para adaptar el número de columnas del catálogo y los bloques informativos desde teléfonos móviles hasta monitores de escritorio.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="case-decisions-card">
+                    <span class="case-decisions-label">DECISIONES CLAVE</span>
+                    <div class="case-decisions-grid">
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Grilla adaptable con CSS Grid
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        14 productos de tecnologías web
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        4 pilares «¿Por qué comprar?»
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        HTML y CSS puro sin frameworks
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 03. Conclusiones -->
+                <article id="conclusiones" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">03</span>
+                    <h2 class="case-block-title">Conclusiones</h2>
+                  </div>
+
+                  <div class="case-conclusions-card">
+                    <div class="case-kpi-grid">
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">14</div>
+                        <div class="case-kpi-label">Poleras temáticas para devs en el catálogo</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">100%</div>
+                        <div class="case-kpi-label">Maquetación responsiva con HTML y CSS</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">4</div>
+                        <div class="case-kpi-label">Pilares de propuesta de valor estructurados</div>
+                      </div>
+                    </div>
+
+                    <div class="case-conclusions-body">
+                      <p class="case-conclusions-text">
+                        FrontEnd Store cumplió su propósito como proyecto práctico para afianzar las bases de HTML5, CSS3 y Responsive Design, logrando una tienda virtual ordenada, rápida y coherente en todas sus secciones.
+                      </p>
+
+                      <span class="case-learning-label">APRENDIZAJE CLAVE</span>
+                      <p class="case-learning-text">
+                        Dominar CSS Grid y Flexbox sin depender de librerías externas permite resolver catálogos de productos complejos y grillas asimétricas con pocas líneas de código y total control responsivo.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. SHOWCASE VISUAL (MOCKUPS EN CONTEXTO) -->
+        <section class="case-showcase-section">
+          <div class="case-container">
+            <div class="case-showcase-header reveal">
+              <div>
+                <span class="section-tag">SHOWCASE VISUAL</span>
+                <h2 class="case-showcase-title">La tienda, en su navegador</h2>
+              </div>
+              <p class="case-showcase-subtitle">
+                Vistas del catálogo «Nuestros Productos» y de la sección «Nosotros» en distintos formatos.
+              </p>
+            </div>
+
+            <!-- Bento Superior (01, 02 y 03) -->
+            <div class="showcase-bento-top">
+              <div class="showcase-col-left">
+                <!-- Mockup 01 -->
+                <div class="showcase-card reveal">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen">
+                      <!-- MULTIMEDIA MOCKUP 01: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/6Tienda/1pc.jpg" alt="Vista principal de FrontEnd Store — Nuestros Productos" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+
+                  </div>
+                </div>
+
+                <!-- Mockup 02 -->
+                <div class="showcase-card reveal">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen">
+                      <!-- MULTIMEDIA MOCKUP 02: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/6Tienda/2pc.jpg" alt="Grilla de poleras temáticas para desarrolladores" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mockup 03 -->
+              <div class="showcase-col-right">
+                <div class="showcase-card reveal delay-1">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen tall">
+                      <!-- MULTIMEDIA MOCKUP 03: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/6Tienda/1cel.jpg" alt="Vista móvil responsiva de FrontEnd Store" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Inferior (04, 05 y 06) -->
+            <div class="showcase-bento-bottom">
+              <!-- Mockup 04 -->
+              <div class="showcase-card reveal">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 04: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/6Tienda/2cel.jpg" alt="Vista móvil de la sección Nosotros" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+
+                </div>
+              </div>
+
+              <!-- Mockup 05 -->
+              <div class="showcase-card reveal delay-1">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 05: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/6Tienda/3cel.jpg" alt="Detalle de prendas y precios del catálogo" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+
+                </div>
+              </div>
+
+              <!-- Mockup 06 -->
+              <div class="showcase-card reveal delay-2">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 06: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/6Tienda/bannerI.jpg" alt="Sección ¿Por qué comprar con nosotros?" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+        <div class="case-bottom-nav">
+          <a href="proyecto-5.html" class="case-back-btn" style="margin-bottom: 0;">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Proyecto anterior: BlogDeCafé
+          </a>
+
+        </div>
+      </main>
+
+      <!-- FOOTER INFERIOR -->
+      <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <div class="footer-copy-group">
+              <span class="footer-copyright">
+                © 2026 Fernando Vidal Catacora Gonzales. Todos los derechos reservados.
+              </span>
+            </div>
+
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/fernando_vcg_3/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/fernando-vidal-catacora-gonzales-151739361" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="https://github.com/FernandoVCG33" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+              <a href="https://www.behance.net/fernandcatacor1" target="_blank" rel="noopener noreferrer" aria-label="Behance" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

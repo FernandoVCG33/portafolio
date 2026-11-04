@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Fernando Catacora</title>
+    <meta
+      name="description"
+      content="Showcases a premium dark-mode portfolio highlighting UI/UX and frontend skills with projects, services, and CV download for professional visibility."
+    />
+    <link rel="icon" type="image/jpeg" href="imagenes/logo_fer_fav_icon.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          var alreadyVisited =
+            sessionStorage.getItem("fc_portfolio_visited") === "true" ||
+            (window.name && window.name.indexOf("fc_portfolio_visited") !== -1);
+          if (alreadyVisited) {
+            document.documentElement.classList.add("skip-splash");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- ====================================================================
+         SPLASH SCREEN (INTRO OVERLAY)
+         ==================================================================== -->
+    <div id="splash-overlay" class="splash-overlay">
+      <div class="splash-logo">
+        <img src="imagenes/logo%20fer.jpg" alt="FC logo" class="brand-logo-img" />
+      </div>
+      <div class="splash-text">
+        <div class="splash-name">
+          Fernando <span class="text-accent">Catacora</span>
+        </div>
+        <div class="splash-role">UX Engineer</div>
+      </div>
+      <div class="splash-loader">
+        <div class="splash-loader-bar"></div>
+      </div>
+    </div>
+
+
+    <div id="app-wrapper" class="app-wrapper">
+      <!-- ==================================================================
+           HEADER / NAVEGACIÓN
+           ================================================================== -->
+      <header id="site-header" class="site-header">
+        <div class="nav-container">
+          <!-- Logo -->
+          <a href="#inicio" class="brand-link">
+            <div class="brand-logo-box">
+              <!-- MULTIMEDIA: Coloca aquí la ruta de tu logo (ej. src="assets/logo.jpg") -->
+              <img src="imagenes/logo%20fer.jpg" alt="FC logo" class="brand-logo-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-subtitle">UX Engineer</span>
+            </div>
+          </a>
+
+          <!-- Navegación Desktop -->
+          <nav class="desktop-nav hidden-mobile">
+            <a href="#inicio" class="nav-link active" data-nav-section="inicio">Inicio</a>
+            <a href="#especialidades" class="nav-link" data-nav-section="especialidades">Especialidades</a>
+            <a href="#proyectos" class="nav-link" data-nav-section="proyectos">Proyectos</a>
+            <a href="#contacto" class="nav-link" data-nav-section="contacto">Contacto</a>
+
+
+          </nav>
+
+          <!-- Botón Hamburguesa Móvil -->
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg id="icon-menu" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            <svg id="icon-close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display: none;">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="mobile-menu">
+          <a href="#inicio" class="mobile-nav-link active" data-nav-section="inicio">Inicio</a>
+          <a href="#especialidades" class="mobile-nav-link" data-nav-section="especialidades">Especialidades</a>
+          <a href="#proyectos" class="mobile-nav-link" data-nav-section="proyectos">Proyectos</a>
+          <a href="#contacto" class="mobile-nav-link" data-nav-section="contacto">Contacto</a>
+
+          <!-- MULTIMEDIA: Coloca aquí la ruta de tu CV en PDF (ej. href="assets/Fernando_Catacora.pdf") -->
+        </div>
+      </header>
+
+      <!-- ==================================================================
+           MAIN CONTENT
+           ================================================================== -->
+      <main>
+        <!-- ================================================================
+             SECCIÓN HERO
+             ================================================================ -->
+        <section id="inicio" class="hero-section">
+          <!-- Resplandores de fondo -->
+          <div class="hero-glow-top"></div>
+          <div class="hero-glow-bottom"></div>
+
+          <div class="hero-grid">
+            <!-- Columna izquierda: Texto y CTAs -->
+            <div>
+
+
+              <h1 class="hero-title hero-anim-up delay-2">
+                Fernando Vidal
+                <br />
+                <span class="text-accent">Catacora</span>
+                <br />
+                Gonzales
+              </h1>
+
+              <p class="hero-subtitle hero-anim-up delay-3">
+                UI/UX Designer &amp; Frontend Developer
+              </p>
+
+              <p class="hero-description hero-anim-up delay-4">
+                Diseño experiencias digitales que combinan la belleza visual con la funcionalidad técnica.
+                Del wireframe al código, creo interfaces que conectan con las personas y potencian los negocios.
+              </p>
+
+              <div class="hero-actions hero-anim-up delay-5">
+                <!-- MULTIMEDIA: Coloca aquí la ruta de tu CV en PDF (ej. href="assets/Fernando_Catacora.pdf") -->
+                <a href="imagenes/CV%20Fernando%20Catacora.pdf" download="Fernando_Vidal_CV.pdf" class="btn-primary">
+                  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Descargar CV
+                </a>
+                <a href="#proyectos" class="btn-secondary">
+                  Ver proyectos
+                </a>
+              </div>
+
+              <!-- Estadísticas -->
+              <div class="stats-row hero-anim-up delay-6">
+                <div>
+                  <div class="stat-value">2+</div>
+                  <div class="stat-label">Años de experiencia</div>
+                </div>
+                <div>
+                  <div class="stat-value">4+</div>
+                  <div class="stat-label">Proyectos completados</div>
+                </div>
+                <div>
+                  <div class="stat-value">10+</div>
+                  <div class="stat-label">Clientes satisfechos</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Columna derecha: Retrato -->
+            <div class="hero-portrait hero-anim-right delay-3">
+              <!-- Anillos decorativos -->
+              <div class="portrait-ring-outer"></div>
+              <div class="portrait-ring-inner"></div>
+
+              <!-- Marco de fotografía -->
+              <div class="portrait-frame">
+                <div class="portrait-top-line"></div>
+                <!-- MULTIMEDIA: Coloca aquí la ruta de tu fotografía de perfil (ej. src="assets/foto-perfil.jpeg") -->
+                <img
+                  src="imagenes/fotoFer.jpg"
+                  alt="Fernando Catacora — UI/UX Designer &amp; Frontend Developer"
+                  class="portrait-img"
+                />
+                <div class="portrait-gradient"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECCIÓN ESPECIALIDADES (SERVICES)
+             ================================================================ -->
+        <section id="especialidades" class="services-section">
+          <div class="section-divider"></div>
+
+          <div class="section-container">
+            <div class="services-header reveal">
+              <span class="section-tag">Lo que hago</span>
+              <h2 class="section-title">Mis Especialidades</h2>
+              <p class="services-subtitle">
+                Tres disciplinas complementarias que trabajan juntas para entregar soluciones digitales completas y de alto impacto.
+              </p>
+            </div>
+
+            <div class="services-grid">
+              <!-- Especialidad 1 -->
+              <div class="service-card reveal">
+                <div class="service-card-topline"></div>
+                <div class="service-icon-box">
+                  <svg width="28" height="28" fill="none" stroke="#008065" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                </div>
+                <span class="service-label">UI/UX Design</span>
+                <h3 class="service-title">Diseño de Interfaces &amp; Experiencia de Usuario</h3>
+                <p class="service-description">
+                  Creo interfaces intuitivas centradas en el usuario. Desde la investigación y arquitectura de información hasta wireframes, prototipos interactivos y sistemas de diseño escalables en Figma.
+                </p>
+                <div class="service-tools">
+                  <span class="tool-tag">Figma</span>
+                  <span class="tool-tag">Wireframing</span>
+                  <span class="tool-tag">Prototyping</span>
+                  <span class="tool-tag">User Research</span>
+                  <span class="tool-tag">Design Systems</span>
+                </div>
+              </div>
+
+              <!-- Especialidad 2 -->
+              <div class="service-card reveal delay-1">
+                <div class="service-card-topline"></div>
+                <div class="service-icon-box">
+                  <svg width="28" height="28" fill="none" stroke="#008065" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <span class="service-label">Frontend Development</span>
+                <h3 class="service-title">Desarrollo Frontend &amp; Código Limpio</h3>
+                <p class="service-description">
+                  Transformo diseños en experiencias web funcionales y de alto rendimiento. Trabajo con HTML semántico, CSS avanzado y JavaScript Vanilla para construir interfaces accesibles y responsive.
+                </p>
+                <div class="service-tools">
+                  <span class="tool-tag">HTML5</span>
+                  <span class="tool-tag">CSS3</span>
+                  <span class="tool-tag">JavaScript</span>
+                  <span class="tool-tag">Responsive Design</span>
+                  <span class="tool-tag">Web Performance</span>
+                </div>
+              </div>
+
+              <!-- Especialidad 3 -->
+              <div class="service-card reveal delay-2">
+                <div class="service-card-topline"></div>
+                <div class="service-icon-box">
+                  <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#009688"
+                          stroke-width="1.25"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                  >
+                    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                    <path d="M9 17v-4" />
+                    <path d="M12 17v-1" />
+                    <path d="M15 17v-2" />
+                    <path d="M12 17v-1" />
+                  </svg>
+
+                </div>
+                <span class="service-label">Marketing Digital</span>
+                <h3 class="service-title">Metricas y marketing digital</h3>
+                <p class="service-description">
+                  Utilizo herramientas de análisis web y marketing digital para optimizar la presencia en línea de los proyectos. Implemento estrategias basadas en datos para mejorar la visibilidad, el engagement y la conversión.
+                </p>
+                <div class="service-tools">
+                  <span class="tool-tag">Datos</span>
+                  <span class="tool-tag">Marketing</span>
+                  <span class="tool-tag">Google analytics </span>
+                  <span class="tool-tag">Estrategias</span>
+                  <span class="tool-tag">Leads</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECCIÓN PORTAFOLIO (PROJECTS)
+             ================================================================ -->
+        <section id="proyectos" class="portfolio-section">
+          <div class="section-divider"></div>
+
+          <div class="section-container">
+            <div class="portfolio-header reveal">
+              <div>
+                <span class="section-tag">Portafolio</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+              </div>
+            </div>
+
+            <div class="projects-grid">
+              <!-- Proyecto 1: Landing Page — Pizzería -->
+              <article class="project-card reveal" data-project-href="proyecto-1.html">
+                <div class="project-media">
+                  <!-- MULTIMEDIA: Coloca aquí la ruta de la portada del Proyecto 1 (ej. src="assets/pizzeria.png") -->
+                  <img
+                    src="imagenes/1%20Pizza/Banner%20de%20entrada.png"
+                    alt="Landing Page — Pizzería"
+                    class="project-img"
+                  />
+                  <div class="project-media-overlay"></div>
+
+                </div>
+
+                <div class="project-body">
+                  <h3 class="project-title">Landing Page — Pizzería</h3>
+                  <p class="project-description">
+                    Ejercicio práctico de desarrollo web para reforzar HTML, CSS y JavaScript con una página responsiva que organiza la propuesta de valor, los sabores destacados, el equipo y el contacto directo en un recorrido claro.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Responsive</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="proyecto-1.html" class="btn-project-link">
+                      Ver proyecto
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 2: App CNS — Citas Médicas -->
+              <article class="project-card reveal delay-1" data-project-href="proyecto-2.html">
+                <div class="project-media">
+                  <!-- MULTIMEDIA: Coloca aquí la ruta de la portada del Proyecto 2 (ej. src="assets/app-cns.png") -->
+                  <img
+                    src="imagenes/2appcns/banner.png"
+                    alt="App CNS — Citas Médicas"
+                    class="project-img"
+                  />
+                  <div class="project-media-overlay"></div>
+
+                </div>
+
+                <div class="project-body">
+                  <h3 class="project-title">App - CNS app</h3>
+                  <p class="project-description">
+                    Caso de estudio UX/UI para la Caja Nacional de Salud en La Paz. Rediseño digital enfocado en reservar citas médicas en menos de 3 minutos mediante metodología C.L.E.A.R. UI y Design Tokens en Figma.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">UX/UI Design</span>
+                    <span class="project-tag">Figma</span>
+                    <span class="project-tag">Investigación de usuario</span>
+                    <span class="project-tag">Mobile App</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="proyecto-2.html" class="btn-project-link">
+                      Ver caso de estudio
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 3: App — LA CUENTA -->
+              <article class="project-card reveal" data-project-href="proyecto-3.html">
+                <div class="project-media">
+                  <!-- MULTIMEDIA: Coloca aquí la ruta de la portada del Proyecto 3 (ej. src="imagenes/la-cuenta.png") -->
+                  <img
+                    src="imagenes/3Lacuenta/Banner.png"
+                    alt="App — LA CUENTA"
+                    class="project-img"
+                  />
+                  <div class="project-media-overlay"></div>
+
+                </div>
+
+                <div class="project-body">
+                  <h3 class="project-title">App - LA CUENTA</h3>
+                  <p class="project-description">
+                    App móvil para compartir la mesa y dividir cuentas de restaurantes y cafeterías, con distintas formas de repartir el pago (equitativo, por consumo o ruleta), cobro por QR y comprobante digital.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Diseño ux/ui</span>
+                    <span class="project-tag">Figma</span>
+                    <span class="project-tag">Diseño de apps</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="proyecto-3.html" class="btn-project-link">
+                      Ver proyecto
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Proyecto 4: Sitio web — TAMBO -->
+              <article class="project-card reveal delay-1" data-project-href="proyecto-4.html">
+                <div class="project-media">
+                  <!-- MULTIMEDIA: Coloca aquí la ruta de la portada del Proyecto 4 (ej. src="imagenes/tambo.jpg") -->
+                  <img
+                    src="imagenes/4%20Tambo/banner%202.png"
+                    alt="Sitio web — TAMBO"
+                    class="project-img"
+                  />
+                  <div class="project-media-overlay"></div>
+
+                </div>
+
+                <div class="project-body">
+                  <h3 class="project-title">Sitio web - TAMBO</h3>
+                  <p class="project-description">
+                    Plataforma web cultural diseñada para conectar a las personas con la agenda de eventos artísticos, música, danza, teatro, artistas y espacios patrimoniales en un solo punto de encuentro digital.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Diseño ux/ui</span>
+                    <span class="project-tag">Diseño web</span>
+                    <span class="project-tag">Figma</span>
+                    <span class="project-tag">Responsive</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="proyecto-4.html" class="btn-project-link">
+                      Ver proyecto
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <!-- Proyecto 5: Sitio web — BlogDeCafe -->
+              <article class="project-card reveal delay-1" data-project-href="proyecto-5.html">
+                <div class="project-media">
+                  <!-- MULTIMEDIA: Coloca aquí la ruta de la portada del Proyecto 5 (ej. src="imagenes/blogdecafe.jpg") -->
+                  <img
+                          src="imagenes/5%20Cafe/banner.png"
+                          alt="Sitio web — BlogDeCafe"
+                          class="project-img"
+                  />
+                  <div class="project-media-overlay"></div>
+
+                </div>
+
+                <div class="project-body">
+                  <h3 class="project-title">Sitio web - BlogDeCafe</h3>
+                  <p class="project-description">
+                    Plataforma web y blog sobre cultura cafetera con artículos, recetas, talleres prácticos y formulario de contacto, maquetada para reforzar HTML5 semántico, CSS3 y Responsive Design.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Diseño web</span>
+                    <span class="project-tag">Desarrollo Front-End</span>
+                    <span class="project-tag">Responsive</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="proyecto-5.html" class="btn-project-link">
+                      Ver proyecto
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <!-- Proyecto 6: Sitio web — FrontEndStore -->
+              <article class="project-card reveal delay-1" data-project-href="proyecto-6.html">
+                <div class="project-media">
+                  <!-- MULTIMEDIA: Coloca aquí la ruta de la portada del Proyecto 6 (ej. src="imagenes/frontendstore.jpg") -->
+                  <img
+                          src="imagenes/6Tienda/Banner%20de%20entrada.png"
+                          alt="Sitio web — FrontEndStore"
+                          class="project-img"
+                  />
+                  <div class="project-media-overlay"></div>
+
+                </div>
+
+                <div class="project-body">
+                  <h3 class="project-title">Sitio web - FrontEndStore</h3>
+                  <p class="project-description">
+                    Tienda virtual de poleras para desarrolladores («Código de Estilo») creada para reforzar maquetación con HTML semántico, CSS Grid, Flexbox y Responsive Design en catálogo de productos y secciones informativas.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Diseño web</span>
+                    <span class="project-tag">Desarrollo Front-End</span>
+                    <span class="project-tag">Responsive</span>
+                  </div>
+                  <div class="project-actions">
+                    <a href="proyecto-6.html" class="btn-project-link">
+                      Ver proyecto
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECCIÓN METODOLOGÍA (EL MÉTODO C.L.E.A.R.)
+             ================================================================ -->
+        <section id="metodologia" class="methodology-section">
+          <div class="methodology-glow"></div>
+          <div class="section-divider"></div>
+
+          <div class="section-container">
+            <div class="methodology-header reveal">
+              <span class="section-tag">Metodología</span>
+              <h2 class="section-title">
+                El Método <span class="text-accent">C.L.E.A.R.</span>
+              </h2>
+              <p class="methodology-subtitle">
+                Un flujo de trabajo estructurado y Mobile-First que garantiza resultados
+                consistentes desde la investigación hasta el producto final en producción.
+              </p>
+              <div class="methodology-badges">
+                <span class="methodology-badge">Mobile-First</span>
+                <span class="methodology-badge">Responsive Design</span>
+                <span class="methodology-badge">WCAG Accessibility</span>
+                <span class="methodology-badge">Iterative Process</span>
+              </div>
+            </div>
+
+            <div class="clear-steps">
+              <!-- Paso 1: C -->
+              <div class="clear-step clear-step-even reveal">
+                <div class="clear-card-col">
+                  <div class="step-card">
+                    <div class="step-word">Comprender</div>
+                    <h3 class="step-title">Comprender el Contexto</h3>
+                    <p class="step-description">
+                      Inicio con investigación profunda del usuario y del negocio. Entrevistas, benchmarking y análisis heurístico para entender el problema antes de diseñar cualquier solución.
+                    </p>
+                    <div class="step-detail">User Research · Benchmarking · Heurísticas</div>
+                  </div>
+                </div>
+                <div class="clear-node-col">
+                  <div class="clear-node-circle">
+                    <span>C</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paso 2: L -->
+              <div class="clear-step clear-step-odd reveal">
+                <div class="clear-node-col">
+                  <div class="clear-node-circle">
+                    <span>L</span>
+                  </div>
+                </div>
+                <div class="clear-card-col">
+                  <div class="step-card">
+                    <div class="step-word">Líneas</div>
+                    <h3 class="step-title">Líneas &amp; Arquitectura</h3>
+                    <p class="step-description">
+                      Estructuro el flujo de información con arquitectura de información, mapas de sitio y wireframes de baja fidelidad. Priorizando la usabilidad y la jerarquía visual.
+                    </p>
+                    <div class="step-detail">Wireframing · IA · Sitemaps · User Flows</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paso 3: E -->
+              <div class="clear-step clear-step-even reveal">
+                <div class="clear-card-col">
+                  <div class="step-card">
+                    <div class="step-word">Estructurar</div>
+                    <h3 class="step-title">Estructurar el Sistema</h3>
+                    <p class="step-description">
+                      Construyo el sistema de diseño visual: tipografía, paletas de color, componentes reutilizables y guías de estilo que garantizan consistencia en toda la interfaz.
+                    </p>
+                    <div class="step-detail">Design System · Tokens · Componentes</div>
+                  </div>
+                </div>
+                <div class="clear-node-col">
+                  <div class="clear-node-circle">
+                    <span>E</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paso 4: A -->
+              <div class="clear-step clear-step-odd reveal">
+                <div class="clear-node-col">
+                  <div class="clear-node-circle">
+                    <span>A</span>
+                  </div>
+                </div>
+                <div class="clear-card-col">
+                  <div class="step-card">
+                    <div class="step-word">Aplicar</div>
+                    <h3 class="step-title">Aplicar con Código</h3>
+                    <p class="step-description">
+                      Desarrollo el frontend con HTML semántico, CSS avanzado y JavaScript aplicando principios Mobile-First. El diseño toma vida con animaciones y microinteracciones.
+                    </p>
+                    <div class="step-detail">HTML · CSS · JS · Responsive · Motion</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paso 5: R -->
+              <div class="clear-step clear-step-even reveal">
+                <div class="clear-card-col">
+                  <div class="step-card">
+                    <div class="step-word">Revisar</div>
+                    <h3 class="step-title">Revisar &amp; Optimizar</h3>
+                    <p class="step-description">
+                      Tests con usuarios reales, análisis de accesibilidad WCAG y optimización de rendimiento. Iteración continua para perfeccionar la experiencia hasta superar las expectativas.
+                    </p>
+                    <div class="step-detail">Usability Testing · WCAG · Performance</div>
+                  </div>
+                </div>
+                <div class="clear-node-col">
+                  <div class="clear-node-circle">
+                    <span>R</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ==================================================================
+           FOOTER / CONTACTO
+           ================================================================== -->
+      <footer id="contacto" class="site-footer">
+        <div class="footer-top-line"></div>
+
+        <!-- Bloque Contáctame (Formulario) -->
+        <div class="footer-cta">
+          <div class="footer-glow"></div>
+
+          <div class="footer-cta-inner footer-contact-container reveal">
+            <span class="section-tag">¿Listo para colaborar?</span>
+            <h2 class="footer-cta-title">
+              <span class="text-accent">Contáctame</span>
+            </h2>
+            <p class="footer-cta-description">
+              Cuéntame sobre tu proyecto y construyamos algo extraordinario juntos. Estoy disponible para roles full-time, freelance y colaboraciones creativas.
+            </p>
+
+            <div class="contact-form-card">
+              <div class="service-card-topline"></div>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-row-grid">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="nombre"
+                      class="form-control"
+                      placeholder="Tu nombre completo"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label">Correo electrónico</label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="correo"
+                      class="form-control"
+                      placeholder="tucorreo@ejemplo.com"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row-grid">
+                  <div class="form-group">
+                    <label for="contact-phone" class="form-label">Teléfono</label>
+                    <input
+                      type="tel"
+                      id="contact-phone"
+                      name="telefono"
+                      class="form-control"
+                      placeholder="+591 75247869"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-service" class="form-label">Servicio</label>
+                    <div class="select-wrapper">
+                      <select id="contact-service" name="servicio" class="form-control form-select">
+                        <option value="" selected disabled>Selecciona un servicio</option>
+                        <option value="Diseño UI/UX">Diseño UI/UX</option>
+                        <option value="Desarrollo">Desarrollo</option>
+                        <option value="Ambos (Diseño UI/UX y Desarrollo)">Ambos (Diseño UI/UX y Desarrollo)</option>
+                      </select>
+                      <svg class="select-arrow" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-details" class="form-label">Detalles del proyecto</label>
+                  <textarea
+                    id="contact-details"
+                    name="detalles"
+                    rows="6"
+                    class="form-control form-textarea"
+                    placeholder="Describe tu proyecto, objetivos, alcance o cualquier detalle importante..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit-contact">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <line x1="22" y1="2" x2="11" y2="13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                  Enviar mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra inferior -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <div class="footer-copy-group">
+              <span class="footer-copyright">
+                © 2026 Fernando Vidal Catacora Gonzales. Todos los derechos reservados.
+              </span>
+            </div>
+
+            <div class="footer-socials">
+              <a
+                href="https://www.instagram.com/fernando_vcg_3/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="social-btn"
+              >
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/fernando-vidal-catacora-gonzales-151739361"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="social-btn"
+              >
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+
+              <a
+                href="https://github.com/FernandoVCG33"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="social-btn"
+              >
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+              <a
+                      href="https://www.behance.net/fernandcatacor1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Behance"
+                      class="social-btn"
+              >
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"
+                >
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ====================================================================
+         ALERTA SUPERIOR DESPLEGABLE (CAMPOS VACÍOS)
+         ==================================================================== -->
+    <div id="top-alert" class="top-alert" role="alert" aria-live="assertive">
+      <div class="top-alert-icon">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="12" />
+          <line x1="12" y1="16" x2="12.01" y2="16" />
+        </svg>
+      </div>
+      <span class="top-alert-text">Llene todos los campos por favor</span>
+    </div>
+
+    <!-- ====================================================================
+         POP-UP MODAL DE ÉXITO (MENSAJE ENVIADO)
+         ==================================================================== -->
+    <div id="success-modal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="service-card-topline"></div>
+        <div class="modal-icon-box">
+          <svg width="32" height="32" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <h3 id="modal-title" class="modal-title">¡Mensaje enviado!</h3>
+        <p class="modal-description">
+          Tu mensaje ha sido enviado correctamente. Me pondré en contacto contigo a la brevedad.
+        </p>
+        <button type="button" id="close-modal-btn" class="btn-modal-close">
+          Entendido
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

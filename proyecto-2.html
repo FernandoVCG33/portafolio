@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNS Mobile — Caso de Estudio </title>
+    <meta
+      name="description"
+      content="Estudio de Caso UX/UI: Rediseño Digital de CNS Mobile — Transformación de la Atención Médica Pública en La Paz, Bolivia."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="imagenes/logo_fer_fav_icon.jpg" />
+  </head>
+
+  <body>
+    <div class="case-page-wrapper">
+      <!-- ==================================================================
+           HEADER / NAVEGACIÓN
+           ================================================================== -->
+      <header id="site-header" class="site-header">
+        <div class="nav-container">
+          <a href="index.html#inicio" class="brand-link">
+            <div class="brand-logo-box">
+              <img src="imagenes/logo%20fer.jpg" alt="FC logo" class="brand-logo-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-subtitle">UX Engineer</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav hidden-mobile">
+            <a href="index.html#inicio" class="nav-link">Inicio</a>
+            <a href="index.html#especialidades" class="nav-link">Especialidades</a>
+            <a href="index.html#proyectos" class="nav-link active">Proyectos</a>
+            <a href="index.html#contacto" class="nav-link">Contacto</a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg id="icon-menu" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            <svg id="icon-close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display: none;">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <a href="index.html#inicio" class="mobile-nav-link">Inicio</a>
+          <a href="index.html#especialidades" class="mobile-nav-link">Especialidades</a>
+          <a href="index.html#proyectos" class="mobile-nav-link active">Proyectos</a>
+          <a href="index.html#contacto" class="mobile-nav-link">Contacto</a>
+        </div>
+      </header>
+
+      <!-- ==================================================================
+           MAIN CONTENT — CASO DE ESTUDIO CNS MOBILE
+           ================================================================== -->
+      <main>
+        <!-- 1. HERO DEL CASO DE ESTUDIO -->
+        <section class="case-hero cns-hero">
+          <div class="case-hero-glow"></div>
+
+          <div class="case-container">
+            <a href="index.html#proyectos" class="case-back-btn">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              Volver a proyectos
+            </a>
+
+            <div class="cns-hero-top">
+              <div class="cns-hero-main">
+                <div class="cns-kicker">
+                  <span class="cns-kicker-line"></span>
+                  <span>CASO DE ESTUDIO</span>
+                </div>
+
+                <h1 class="case-title">CNS Mobile</h1>
+                <p class="cns-hero-subtitle">Transformación Digital de la Salud Pública</p>
+              </div>
+
+              <div class="cns-hero-aside">
+                <p class="cns-hero-lead">
+                  De la fila de madrugada a una cita reservada en menos de tres minutos, desde el celular.
+                </p>
+
+                <!-- ENLACE AL PROTOTIPO: Coloca aquí la URL de tu prototipo de Figma en href="" -->
+                <a href="https://www.figma.com/proto/dzmxM0QHCd6WaymQdv2RVb/App-CNS-Final?node-id=6501-2023&p=f&viewport=369%2C129%2C0.03&t=LDfacGBBHsjByGAP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6520%3A1303&page-id=5855%3A209" target="_blank" rel="noopener noreferrer" class="btn-cns-proto">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+                  </svg>
+                  Ver prototipo
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Imagen Principal Hero (Mockup de las 3 pantallas móviles: Agendar cita, Inicio y Mi historial) -->
+            <div class="case-hero-banner cns-hero-banner reveal">
+              <!-- MULTIMEDIA HERO: Coloca aquí la ruta de la imagen principal con los 3 celulares (ej. src="imagenes/cns-hero.png") -->
+              <img
+                src="imagenes/2appcns/bannerInicio.png"
+                alt="CNS Mobile — Pantallas principales: Agendar cita, Inicio y Mi historial"
+                class="case-hero-img"
+              />
+              <div class="case-banner-overlay"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. FICHA TÉCNICA -->
+        <section class="cns-specs-section">
+          <div class="case-container">
+            <div class="cns-specs-card reveal">
+              <div class="cns-specs-header">FICHA TÉCNICA</div>
+
+              <div class="cns-specs-grid">
+                <div class="cns-spec-col">
+                  <span class="cns-spec-label">AÑO</span>
+                  <div class="cns-spec-value">2026</div>
+                </div>
+
+                <div class="cns-spec-col">
+                  <span class="cns-spec-label">DISCIPLINA</span>
+                  <div class="cns-spec-value">UX/UI Mobile Design &amp; Front-End Architecture</div>
+                </div>
+
+                <div class="cns-spec-col">
+                  <span class="cns-spec-label">HERRAMIENTAS</span>
+                  <div class="cns-spec-value">Figma, Figjam</div>
+                </div>
+
+                <div class="cns-spec-col">
+                  <span class="cns-spec-label">ROL</span>
+                  <div class="cns-spec-value">UX/UI Product Designer &amp; Strategy Lead</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             ACTO 1 · EL CONFLICTO Y EL BRIEF
+             ================================================================ -->
+        <section id="acto-1" class="cns-act-section">
+          <div class="case-container">
+            <div class="cns-act-header reveal">
+              <span class="cns-act-kicker">ACTO 1 · EL CONFLICTO Y EL BRIEF</span>
+              <h2 class="cns-act-title">Una fila a la intemperie para conseguir una ficha</h2>
+              <p class="cns-act-lead">
+                En La Paz, acceder a una consulta de la Caja Nacional de Salud significa levantarse de madrugada y esperar en la calle, a temperaturas bajo cero, para conseguir una ficha médica presencial. El sistema funciona, pero a costa del cuerpo y del tiempo de quien más lo necesita.
+              </p>
+            </div>
+
+            <!-- 4 Puntos Críticos de la Problemática -->
+            <div class="cns-pain-grid reveal">
+              <div class="cns-pain-card">
+                <div class="cns-icon-chip">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <polyline points="20 16 16 12 20 8" />
+                    <polyline points="4 8 8 12 4 16" />
+                    <polyline points="16 4 12 8 8 4" />
+                    <polyline points="8 20 12 16 16 20" />
+                  </svg>
+                </div>
+                <span class="cns-pain-num">01</span>
+                <h3 class="cns-pain-title">Madrugada</h3>
+                <p class="cns-pain-desc">
+                  La fila empieza antes del amanecer, bajo cero, en las calles de La Paz.
+                </p>
+              </div>
+
+              <div class="cns-pain-card">
+                <div class="cns-icon-chip">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </div>
+                <span class="cns-pain-num">02</span>
+                <h3 class="cns-pain-title">A la intemperie</h3>
+                <p class="cns-pain-desc">
+                  Adultos mayores, madres con niños y personas enfermas esperan de pie.
+                </p>
+              </div>
+
+              <div class="cns-pain-card">
+                <div class="cns-icon-chip">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <span class="cns-pain-num">03</span>
+                <h3 class="cns-pain-title">Horas de espera</h3>
+                <p class="cns-pain-desc">
+                  La ficha se entrega presencialmente y por orden de llegada.
+                </p>
+              </div>
+
+              <div class="cns-pain-card">
+                <div class="cns-icon-chip">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
+                    <line x1="9" y1="9" x2="9.01" y2="9" />
+                    <line x1="15" y1="9" x2="15.01" y2="9" />
+                  </svg>
+                </div>
+                <span class="cns-pain-num">04</span>
+                <h3 class="cns-pain-title">Sin garantía</h3>
+                <p class="cns-pain-desc">
+                  Quien llega tarde pierde la mañana, y quizá la consulta.
+                </p>
+              </div>
+            </div>
+
+            <!-- Arquetipo de Usuario: Humberto Quispe -->
+            <div class="cns-subblock reveal">
+              <span class="cns-subkicker">ARQUETIPO DE USUARIO</span>
+              <h3 class="cns-subtitle">Conoce a Humberto Quispe</h3>
+
+              <div class="cns-persona-grid">
+                <!-- Columna Izquierda: Perfil -->
+                <div class="cns-persona-profile">
+                  <div class="cns-persona-top">
+                    <div class="cns-persona-avatar">HQ</div>
+                    <div>
+                      <h4 class="cns-persona-name">Humberto Quispe</h4>
+                      <span class="cns-persona-role">Asegurado y jefe de familia</span>
+                    </div>
+                  </div>
+
+                  <p class="cns-persona-bio">
+                    Trabaja durante el día y se encarga de la salud de sus hijos menores. Para él, una cita médica es una carrera contra el reloj: cada hora de fila es una hora de trabajo perdida.
+                  </p>
+
+                  <blockquote class="cns-persona-quote">
+                    “Solo quiero saber si hay ficha, sin tener que madrugar.”
+                  </blockquote>
+
+                  <div class="cns-persona-tags">
+                    <span class="cns-persona-tag">
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                      </svg>
+                      Dependientes menores
+                    </span>
+                    <span class="cns-persona-tag">
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                        <line x1="12" y1="18" x2="12.01" y2="18" />
+                      </svg>
+                      Celular de gama media
+                    </span>
+                    <span class="cns-persona-tag">
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <line x1="1" y1="1" x2="23" y2="23" />
+                        <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55" />
+                        <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39" />
+                        <path d="M10.71 5.05A16 16 0 0 1 22.58 9" />
+                        <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88" />
+                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                        <line x1="12" y1="20" x2="12.01" y2="20" />
+                      </svg>
+                      Conexión inestable
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Columna Derecha: Necesidades, Frustraciones y Limitaciones -->
+                <div class="cns-persona-details">
+                  <div class="cns-persona-detail-card">
+                    <div class="cns-persona-detail-head">
+                      <div class="cns-icon-chip">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                          <circle cx="12" cy="12" r="10" />
+                          <circle cx="12" cy="12" r="6" />
+                          <circle cx="12" cy="12" r="2" />
+                        </svg>
+                      </div>
+                      <h4 class="cns-persona-detail-title">Necesidades</h4>
+                    </div>
+                    <ul class="cns-bullet-list">
+                      <li>Conseguir una cita para sus hijos sin faltar al trabajo.</li>
+                      <li>Saber, antes de salir de casa, si hay cupo.</li>
+                      <li>Un trámite que se entienda sin pedir ayuda.</li>
+                    </ul>
+                  </div>
+
+                  <div class="cns-persona-detail-card">
+                    <div class="cns-persona-detail-head">
+                      <div class="cns-icon-chip">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
+                          <line x1="9" y1="9" x2="9.01" y2="9" />
+                          <line x1="15" y1="9" x2="15.01" y2="9" />
+                        </svg>
+                      </div>
+                      <h4 class="cns-persona-detail-title">Frustraciones</h4>
+                    </div>
+                    <ul class="cns-bullet-list">
+                      <li>Madrugar y hacer fila sin saber si alcanzará ficha.</li>
+                      <li>Lenguaje burocrático que obliga a adivinar qué opción elegir.</li>
+                      <li>Repetir datos del titular y de los dependientes en cada trámite.</li>
+                    </ul>
+                  </div>
+
+                  <div class="cns-persona-detail-card">
+                    <div class="cns-persona-detail-head">
+                      <div class="cns-icon-chip">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                          <path d="M2 20h.01" />
+                          <path d="M7 20v-4" />
+                          <path d="M12 20v-8" />
+                          <path d="M17 20V8" />
+                        </svg>
+                      </div>
+                      <h4 class="cns-persona-detail-title">Limitaciones de conectividad</h4>
+                    </div>
+                    <ul class="cns-bullet-list">
+                      <li>Celular de gama media o baja, con poco almacenamiento.</li>
+                      <li>Datos móviles limitados y señal intermitente.</li>
+                      <li>Pantallas livianas y errores que no cierren el flujo.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Banner Objetivo Principal (< 3 min) -->
+            <div class="cns-goal-banner reveal">
+              <div class="cns-goal-metric">
+                <span class="cns-goal-label">OBJETIVO PRINCIPAL</span>
+                <div class="cns-goal-value">
+                  <span class="cns-goal-lt">&lt;</span><span class="cns-goal-num">3</span><span class="cns-goal-unit">min</span>
+                </div>
+              </div>
+
+              <div class="cns-goal-body">
+                <h3 class="cns-goal-title">Reducir la reserva de una cita a menos de tres minutos.</h3>
+                <p class="cns-goal-desc">
+                  Con severas restricciones tecnológicas propias de la salud pública: dispositivos modestos, datos limitados y usuarios con distintos niveles de experiencia digital.
+                </p>
+                <a href="#acto-2" class="cns-goal-link">
+                  Del conflicto al método
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             ACTO 2 · PROCESO, METODOLOGÍA Y TRANSFORMACIÓN DE DISEÑO
+             ================================================================ -->
+        <section id="acto-2" class="cns-act-section">
+          <div class="case-container">
+            <div class="cns-act-header reveal">
+              <span class="cns-act-kicker">ACTO 2 · PROCESO, METODOLOGÍA Y TRANSFORMACIÓN DE DISEÑO</span>
+              <h2 class="cns-act-title">De la fricción a un sistema que se entiende al primer toque</h2>
+              <p class="cns-act-lead">
+                Con el marco C.L.E.A.R. UI ordené el trabajo, y con Design Tokens en Figma estandaricé color, tipografía y espaciado para que cada decisión fuera consistente y traducible a código.
+              </p>
+            </div>
+
+            <!-- Marco C.L.E.A.R. (5 Columnas) -->
+            <div class="cns-clear-grid reveal">
+              <div class="cns-clear-card">
+                <span class="cns-clear-letter">C</span>
+                <h3 class="cns-clear-title">Comprender el Contexto</h3>
+                <p class="cns-clear-desc">Entender la fila, al usuario y sus límites.</p>
+              </div>
+
+              <div class="cns-clear-card">
+                <span class="cns-clear-letter">L</span>
+                <h3 class="cns-clear-title">Líneas &amp; Arquitectura</h3>
+                <p class="cns-clear-desc">Flujo de 4 pasos y jerarquía de pantallas.</p>
+              </div>
+
+              <div class="cns-clear-card">
+                <span class="cns-clear-letter">E</span>
+                <h3 class="cns-clear-title">Estructurar el Sistema</h3>
+                <p class="cns-clear-desc">Design Tokens y componentes en Figma.</p>
+              </div>
+
+              <div class="cns-clear-card">
+                <span class="cns-clear-letter">A</span>
+                <h3 class="cns-clear-title">Aplicar con Código</h3>
+                <p class="cns-clear-desc">Tokens listos para HTML/CSS y React.</p>
+              </div>
+
+              <div class="cns-clear-card">
+                <span class="cns-clear-letter">R</span>
+                <h3 class="cns-clear-title">Revisar &amp; Optimizar</h3>
+                <p class="cns-clear-desc">Heurísticas, accesibilidad y ajustes finos.</p>
+              </div>
+            </div>
+
+            <!-- Design Tokens en Figma -->
+            <div class="cns-subblock reveal">
+              <span class="cns-subkicker">DESIGN TOKENS EN FIGMA</span>
+              <h3 class="cns-subtitle">Un solo lenguaje para color, tipografía y espaciado</h3>
+
+              <div class="cns-tokens-grid">
+                <!-- Token 1: Color -->
+                <div class="cns-token-card">
+                  <div class="cns-icon-chip">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                      <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                      <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                      <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                      <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                      <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+                    </svg>
+                  </div>
+                  <h4 class="cns-token-title">Color</h4>
+                  <p class="cns-token-desc">
+                    Un verde institucional como único color de acción, más estados semánticos para disponibilidad.
+                  </p>
+
+                  <div class="cns-token-specimen">
+                    <div class="cns-swatches-row">
+                      <div class="cns-swatch-item">
+                        <div class="cns-swatch-color" style="background: #0E6B5A;"></div>
+                        <span class="cns-swatch-name">primary</span>
+                        <span class="cns-swatch-hex">#0E6B5A</span>
+                      </div>
+                      <div class="cns-swatch-item">
+                        <div class="cns-swatch-color" style="background: #E3F1EE;"></div>
+                        <span class="cns-swatch-name">tint</span>
+                        <span class="cns-swatch-hex">#E3F1EE</span>
+                      </div>
+                      <div class="cns-swatch-item">
+                        <div class="cns-swatch-color" style="background: #F4F7F6; border: 1px solid #DCE4E2;"></div>
+                        <span class="cns-swatch-name">surface</span>
+                        <span class="cns-swatch-hex">#F4F7F6</span>
+                      </div>
+                      <div class="cns-swatch-item">
+                        <div class="cns-swatch-color" style="background: #C88A00;"></div>
+                        <span class="cns-swatch-name">warning</span>
+                        <span class="cns-swatch-hex">#C88A00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Token 2: Tipografía -->
+                <div class="cns-token-card">
+                  <div class="cns-icon-chip">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                      <polyline points="4 7 4 4 20 4 20 7" />
+                      <line x1="9" y1="20" x2="15" y2="20" />
+                      <line x1="12" y1="4" x2="12" y2="20" />
+                    </svg>
+                  </div>
+                  <h4 class="cns-token-title">Tipografía</h4>
+                  <p class="cns-token-desc">
+                    Poppins para títulos y Mulish para lectura, con una escala corta que se mantiene legible a pleno sol.
+                  </p>
+
+                  <div class="cns-token-specimen cns-type-specimen">
+                    <div class="cns-type-h1">Reservar cita</div>
+                    <div class="cns-type-h2">Elige un horario</div>
+                    <div class="cns-type-body">Texto de apoyo en Mulish Regular</div>
+                    <div class="cns-type-label">ETIQUETA</div>
+                  </div>
+                </div>
+
+                <!-- Token 3: Espaciado -->
+                <div class="cns-token-card">
+                  <div class="cns-icon-chip">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                      <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" />
+                      <path d="m14.5 12.5 2-2" />
+                      <path d="m11.5 9.5 2-2" />
+                      <path d="m8.5 6.5 2-2" />
+                      <path d="m17.5 15.5 2-2" />
+                    </svg>
+                  </div>
+                  <h4 class="cns-token-title">Espaciado</h4>
+                  <p class="cns-token-desc">
+                    Una escala base de 4 px que mantiene el ritmo y el aire entre elementos en toda la app.
+                  </p>
+
+                  <div class="cns-token-specimen cns-space-specimen">
+                    <div class="cns-space-row">
+                      <span class="cns-space-num">4</span>
+                      <span class="cns-space-bar" style="width: 14px;"></span>
+                    </div>
+                    <div class="cns-space-row">
+                      <span class="cns-space-num">8</span>
+                      <span class="cns-space-bar" style="width: 28px;"></span>
+                    </div>
+                    <div class="cns-space-row">
+                      <span class="cns-space-num">12</span>
+                      <span class="cns-space-bar" style="width: 44px;"></span>
+                    </div>
+                    <div class="cns-space-row">
+                      <span class="cns-space-num">16</span>
+                      <span class="cns-space-bar" style="width: 62px;"></span>
+                    </div>
+                    <div class="cns-space-row">
+                      <span class="cns-space-num">24</span>
+                      <span class="cns-space-bar" style="width: 92px;"></span>
+                    </div>
+                    <div class="cns-space-row">
+                      <span class="cns-space-num">32</span>
+                      <span class="cns-space-bar" style="width: 124px;"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- C.L.E.A.R. Copywriting & Heurísticas de Nielsen -->
+            <div class="cns-ux-dual-grid reveal">
+              <!-- Columna 1: Copywriting -->
+              <div class="cns-ux-card">
+                <div class="cns-icon-chip">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                </div>
+                <h3 class="cns-ux-card-title">C.L.E.A.R. Copywriting</h3>
+                <p class="cns-ux-card-desc">
+                  Escribí cada etiqueta con las palabras que usaría un asegurado, no un reglamento. “Reservar cita” reemplaza a la jerga burocrática y convierte el botón en una promesa clara.
+                </p>
+
+                <div class="cns-copy-list">
+                  <div class="cns-copy-row">
+                    <span class="cns-copy-old">Solicitar ficha de atención ambulatoria</span>
+                    <span class="cns-copy-arrow">→</span>
+                    <span class="cns-copy-new">Reservar cita</span>
+                  </div>
+                  <div class="cns-copy-row">
+                    <span class="cns-copy-old">Seleccionar prestación de servicio</span>
+                    <span class="cns-copy-arrow">→</span>
+                    <span class="cns-copy-new">Elegir especialidad</span>
+                  </div>
+                  <div class="cns-copy-row">
+                    <span class="cns-copy-old">Registrar beneficiario dependiente</span>
+                    <span class="cns-copy-arrow">→</span>
+                    <span class="cns-copy-new">Agregar a mi hijo o hija</span>
+                  </div>
+                  <div class="cns-copy-row">
+                    <span class="cns-copy-old">Validar transacción de cita</span>
+                    <span class="cns-copy-arrow">→</span>
+                    <span class="cns-copy-new">Confirmar cita</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Columna 2: Heurísticas de Nielsen -->
+              <div class="cns-ux-card">
+                <div class="cns-icon-chip">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                  </svg>
+                </div>
+                <h3 class="cns-ux-card-title">Heurísticas de Nielsen</h3>
+                <p class="cns-ux-card-desc">
+                  Usé las heurísticas como lista de revisión en cada iteración. Estas son las que más pesaron.
+                </p>
+
+                <div class="cns-heuristics-list">
+                  <div class="cns-heuristic-item">
+                    <span class="cns-heuristic-num">01</span>
+                    <div>
+                      <h4 class="cns-heuristic-title">Visibilidad del estado</h4>
+                      <p class="cns-heuristic-desc">Barra de progreso de 4 pasos en cada pantalla.</p>
+                    </div>
+                  </div>
+
+                  <div class="cns-heuristic-item">
+                    <span class="cns-heuristic-num">02</span>
+                    <div>
+                      <h4 class="cns-heuristic-title">Lenguaje del usuario</h4>
+                      <p class="cns-heuristic-desc">Verbos cotidianos en lugar de jerga institucional.</p>
+                    </div>
+                  </div>
+
+                  <div class="cns-heuristic-item">
+                    <span class="cns-heuristic-num">03</span>
+                    <div>
+                      <h4 class="cns-heuristic-title">Control y libertad</h4>
+                      <p class="cns-heuristic-desc">Hojas descartables y botón de volver siempre visible.</p>
+                    </div>
+                  </div>
+
+                  <div class="cns-heuristic-item">
+                    <span class="cns-heuristic-num">04</span>
+                    <div>
+                      <h4 class="cns-heuristic-title">Prevención de errores</h4>
+                      <p class="cns-heuristic-desc">Días agotados deshabilitados en el calendario.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accesibilidad: Toque amplio y errores que no interrumpen -->
+            <div class="cns-a11y-card reveal">
+              <div class="cns-a11y-info">
+                <div class="cns-icon-chip">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0" />
+                    <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2" />
+                    <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8" />
+                    <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+                  </svg>
+                </div>
+                <h3 class="cns-a11y-title">Accesibilidad: toque amplio y errores que no interrumpen</h3>
+                <p class="cns-a11y-desc">
+                  Todos los elementos interactivos respetan touch targets de 44 pt en iOS y 48 dp en Android, pensados para pulgares cansados o con frío. Los fallos de red se comunican con Toasts y Snackbars no bloqueantes: avisan, ofrecen reintento y dejan seguir usando la app.
+                </p>
+              </div>
+
+              <div class="cns-a11y-widget" id="cns-a11y-widget">
+                <div class="cns-a11y-widget-top">
+                  <span class="cns-a11y-widget-label">Área táctil mínima</span>
+                  <button type="button" class="cns-guide-toggle active" id="cns-guide-toggle" aria-pressed="true">
+                    <span>Ver guías</span>
+                    <span class="cns-toggle-switch"><span class="cns-toggle-knob"></span></span>
+                  </button>
+                </div>
+
+                <div class="cns-touch-targets-row" id="cns-touch-targets">
+                  <div class="cns-target-item">
+                    <div class="cns-target-box show-guide">
+                      <span class="cns-target-btn">✓</span>
+                    </div>
+                    <span class="cns-target-size">48 dp</span>
+                    <span class="cns-target-os">Android</span>
+                  </div>
+
+                  <div class="cns-target-item">
+                    <div class="cns-target-box show-guide">
+                      <span class="cns-target-btn">✓</span>
+                    </div>
+                    <span class="cns-target-size">44 pt</span>
+                    <span class="cns-target-os">iOS</span>
+                  </div>
+
+                  <p class="cns-target-note">
+                    El icono puede ser más pequeño; el área de toque, nunca.
+                  </p>
+                </div>
+
+                <div class="cns-a11y-widget-divider"></div>
+
+                <div class="cns-a11y-widget-bottom">
+                  <span class="cns-a11y-widget-label">Errores sin bloquear el flujo</span>
+                  <button type="button" class="btn-cns-simulate" id="btn-cns-simulate">
+                    Simular falla de conexión
+                  </button>
+
+                  <div class="cns-toast-demo" id="cns-toast-demo" aria-live="polite">
+                    <span>Conexión inestable. Tus datos siguen guardados.</span>
+                    <button type="button" class="cns-toast-retry" id="cns-toast-retry">Reintentar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             ACTO 3 · DESENLACE, IMPACTO E INNOVACIÓN
+             ================================================================ -->
+        <section id="acto-3" class="cns-act-section">
+          <div class="case-container">
+            <div class="cns-act-header reveal">
+              <span class="cns-act-kicker">ACTO 3 · DESENLACE, IMPACTO E INNOVACIÓN</span>
+              <h2 class="cns-act-title">Cuatro pasos entre la necesidad y la cita</h2>
+              <p class="cns-act-lead">
+                El flujo final se redujo a lo esencial: cada pantalla tiene una sola tarea y el avance siempre es visible. Recórrelo paso a paso.
+              </p>
+            </div>
+
+            <!-- Recorrido de 4 pasos + Mockup de Teléfono -->
+            <div class="cns-flow-showcase reveal">
+              <div class="cns-steps-col">
+                <div class="cns-step-card active" data-cns-step="1">
+                  <div class="cns-step-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                      <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+                      <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+                      <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />
+                      <path d="M2 12a10 10 0 0 1 18-6" />
+                      <path d="M2 16h.01" />
+                      <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+                      <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+                      <path d="M8.65 22c.21-.66.45-1.32.57-2" />
+                      <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
+                    </svg>
+                  </div>
+                  <div class="cns-step-body">
+                    <span class="cns-step-tag">PASO 1</span>
+                    <h3 class="cns-step-title">Autenticación</h3>
+                    <p class="cns-step-desc">
+                      Carnet de identidad y contraseña, o huella dactilar si el dispositivo la tiene.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cns-step-card" data-cns-step="2">
+                  <div class="cns-step-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                  </div>
+                  <div class="cns-step-body">
+                    <span class="cns-step-tag">PASO 2</span>
+                    <h3 class="cns-step-title">Selección de paciente</h3>
+                    <p class="cns-step-desc">
+                      Alternancia inmediata mediante Choice Chips entre el titular y sus dependientes menores con un solo toque.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cns-step-card" data-cns-step="3">
+                  <div class="cns-step-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                  </div>
+                  <div class="cns-step-body">
+                    <span class="cns-step-tag">PASO 3</span>
+                    <h3 class="cns-step-title">Fecha</h3>
+                    <p class="cns-step-desc">
+                      Calendario custom con indicadores cromáticos de disponibilidad para elegir especialidad, horario y médico de un vistazo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cns-step-card" data-cns-step="4">
+                  <div class="cns-step-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                      <rect x="3" y="3" width="7" height="7" />
+                      <rect x="14" y="3" width="7" height="7" />
+                      <rect x="14" y="14" width="7" height="7" />
+                      <rect x="3" y="14" width="7" height="7" />
+                    </svg>
+                  </div>
+                  <div class="cns-step-body">
+                    <span class="cns-step-tag">PASO 4</span>
+                    <h3 class="cns-step-title">Confirmación con QR</h3>
+                    <p class="cns-step-desc">
+                      Resumen en Bottom Sheet deslizable y emisión de la ficha médica digital con código QR descargable.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cns-steps-breadcrumb">
+                  <span class="cns-bc-item active" data-cns-bc="1">Autenticación</span>
+                  <span class="cns-bc-sep">→</span>
+                  <span class="cns-bc-item" data-cns-bc="2">Selección de paciente</span>
+                  <span class="cns-bc-sep">→</span>
+                  <span class="cns-bc-item" data-cns-bc="3">Fecha</span>
+                  <span class="cns-bc-sep">→</span>
+                  <span class="cns-bc-item" data-cns-bc="4">Confirmación con QR</span>
+                </div>
+              </div>
+
+              <div class="cns-flow-phone-col">
+                <div class="cns-phone-frame">
+                  <!-- MULTIMEDIA FLUJO 4 PASOS: Coloca aquí la imagen de la pantalla del flujo en src="" -->
+                  <img
+                    src="imagenes/2appcns/Login%20inicial.png"
+                    alt="Pantalla del flujo de reserva en 4 pasos de CNS Mobile"
+                    class="mockup-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Innovación Funcional: Buzón Directo de Reclamos -->
+            <div class="cns-reclamos-grid reveal">
+              <div class="cns-reclamos-phone-col">
+                <div class="cns-phone-frame">
+                  <!-- MULTIMEDIA BUZÓN DE RECLAMOS: Coloca aquí la imagen de la pantalla de reclamos en src="" -->
+                  <img
+                    src="imagenes/2appcns/Quejas%20pantallas.png"
+                    alt="Pantalla del Buzón Directo de Reclamos en CNS Mobile"
+                    class="mockup-img"
+                  />
+                </div>
+              </div>
+
+              <div class="cns-reclamos-content">
+                <div class="cns-innovation-pill">
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <line x1="12" y1="8" x2="12" y2="12" />
+                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                  </svg>
+                  INNOVACIÓN FUNCIONAL
+                </div>
+
+                <h3 class="cns-reclamos-title">Buzón Directo de Reclamos</h3>
+                <p class="cns-reclamos-desc">
+                  Un icono de advertencia, siempre visible en el inicio, abre un canal directo para reportar demoras, maltrato o irregularidades. No hay que buscar a quién quejarse: el reclamo se escribe en la misma app y llega a fiscalización.
+                </p>
+
+                <div class="cns-reclamos-subgrid">
+                  <div class="cns-reclamos-subcard">
+                    <h4 class="cns-reclamos-subtitle">Acceso inmediato</h4>
+                    <p class="cns-reclamos-subdesc">Un icono de alerta, sin menús intermedios.</p>
+                  </div>
+
+                  <div class="cns-reclamos-subcard">
+                    <h4 class="cns-reclamos-subtitle">Fiscalización ciudadana</h4>
+                    <p class="cns-reclamos-subdesc">El asegurado deja de ser solo usuario y pasa a ser veedor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Impacto Social en La Paz y Reconocimiento Único -->
+            <div class="cns-impact-banner reveal">
+              <div class="cns-impact-left">
+                <div class="cns-impact-kicker">
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  IMPACTO SOCIAL EN LA PAZ
+                </div>
+
+                <h3 class="cns-impact-title">Devolverle a la gente su madrugada</h3>
+                <p class="cns-impact-desc">
+                  CNS Mobile demuestra que la salud pública puede ser digna y eficiente aun con restricciones tecnológicas. Una cita reservada desde casa evita la fila bajo cero, protege a adultos mayores y familias, y devuelve horas de trabajo y descanso a cada asegurado de La Paz.
+                </p>
+              </div>
+
+              <!-- Tarjeta Única de Reconocimiento (1er Lugar) -->
+              <div class="cns-award-card">
+                <div class="cns-award-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                    <path d="M4 22h16" />
+                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                  </svg>
+                </div>
+                <span class="cns-award-label">RECONOCIMIENTO INSTITUCIONAL</span>
+                <h4 class="cns-award-title">Proyecto Ganador del Primer Lugar</h4>
+                <p class="cns-award-meta">Taller de Diseño Digital 2 · 2026</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+        <div class="case-bottom-nav">
+          <a href="proyecto-1.html" class="case-back-btn" style="margin-bottom: 0;">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Proyecto anterior: Pizzería
+          </a>
+
+          <a href="proyecto-3.html" class="case-next-btn">
+            Siguiente proyecto: App LA CUENTA
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </main>
+
+      <!-- FOOTER INFERIOR -->
+      <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <div class="footer-copy-group">
+              <span class="footer-copyright">
+                © 2026 Fernando Vidal Catacora Gonzales. Todos los derechos reservados.
+              </span>
+            </div>
+
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/fernando_vcg_3/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/fernando-vidal-catacora-gonzales-151739361" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="https://github.com/FernandoVCG33" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+              <a href="https://www.behance.net/fernandcatacor1" target="_blank" rel="noopener noreferrer" aria-label="Behance" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

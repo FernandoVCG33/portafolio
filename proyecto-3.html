@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App LA CUENTA</title>
+    <meta
+      name="description"
+      content="Caso de estudio del proyecto LA CUENTA: app móvil UX/UI para compartir la mesa, dividir cuentas de restaurantes y cafeterías y gestionar pagos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="imagenes/logo_fer_fav_icon.jpg">
+  </head>
+
+  <body>
+    <div class="case-page-wrapper">
+      <!-- ==================================================================
+           HEADER / NAVEGACIÓN
+           ================================================================== -->
+      <header id="site-header" class="site-header">
+        <div class="nav-container">
+          <a href="index.html#inicio" class="brand-link">
+            <div class="brand-logo-box">
+              <img src="imagenes/logo%20fer.jpg" alt="FC logo" class="brand-logo-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-subtitle">UX Engineer</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav hidden-mobile">
+            <a href="index.html#inicio" class="nav-link">Inicio</a>
+            <a href="index.html#especialidades" class="nav-link">Especialidades</a>
+            <a href="index.html#proyectos" class="nav-link active">Proyectos</a>
+            <a href="index.html#contacto" class="nav-link">Contacto</a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg id="icon-menu" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            <svg id="icon-close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display: none;">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <a href="index.html#inicio" class="mobile-nav-link">Inicio</a>
+          <a href="index.html#especialidades" class="mobile-nav-link">Especialidades</a>
+          <a href="index.html#proyectos" class="mobile-nav-link active">Proyectos</a>
+          <a href="index.html#contacto" class="mobile-nav-link">Contacto</a>
+        </div>
+      </header>
+
+      <!-- ==================================================================
+           MAIN CONTENT — CASO DE ESTUDIO PROYECTO 03 (LA CUENTA)
+           ================================================================== -->
+      <main>
+        <!-- 1. HERO DEL PROYECTO -->
+        <section class="case-hero">
+          <div class="case-hero-glow"></div>
+
+          <div class="case-container">
+            <a href="index.html#proyectos" class="case-back-btn">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              Volver a proyectos
+            </a>
+
+            <h1 class="case-title">LA CUENTA</h1>
+            <p class="case-subtitle">Compartir la mesa y pagar</p>
+
+            <div class="case-tags-bar">
+              <span class="case-primary-pill">
+                <span class="case-primary-dot"></span>
+                Diseño UX/UI
+              </span>
+              <span class="case-tags-divider"></span>
+              <span class="case-tech-pill">Aplicación móvil</span>
+              <span class="case-tech-pill">Figma</span>
+              <span class="case-tech-pill">Sistema de diseño</span>
+              <span class="case-tech-pill">Wireframes</span>
+              <span class="case-tech-pill">Prototipado</span>
+            </div>
+
+            <!-- Imagen Principal Hero del Proyecto -->
+            <div class="case-hero-banner reveal">
+              <!-- MULTIMEDIA: Coloca aquí la ruta de la imagen principal del proyecto (ej. src="imagenes/la-cuenta-hero.png") -->
+              <img src="imagenes/3Lacuenta/Banner.png" alt="Portada App LA CUENTA — Compartir la mesa y pagar" class="case-hero-img" />
+              <div class="case-banner-overlay"></div>
+              <span class="case-banner-badge">DISEÑO UX/UI · APLICACIÓN MÓVIL</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. RESUMEN + FICHA TÉCNICA -->
+        <section class="case-overview-section">
+          <div class="case-container">
+            <div class="case-overview-grid reveal">
+              <div>
+                <span class="case-summary-label">RESUMEN</span>
+                <p class="case-summary-lead">
+                  Una app móvil para dividir cuentas de restaurantes y cafeterías, con distintas formas de repartir el pago y evitar confusiones al momento de cerrar la mesa.
+                </p>
+              </div>
+
+              <div class="case-meta-card">
+                <div class="case-meta-grid">
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ROL</span>
+                    <div class="case-meta-value">Diseño UX/UI</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">TIPO</span>
+                    <div class="case-meta-value">Aplicación móvil</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">SISTEMA</span>
+                    <div class="case-meta-value">Figma · Lexend</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ESTADO</span>
+                    <div class="case-meta-value">Prototipo final</div>
+                  </div>
+                </div>
+
+                <!-- ENLACE AL PROTOTIPO: Coloca aquí la URL en href="" -->
+                <a href="https://www.figma.com/proto/6OzvLxMLWkHhWOWIFFjPbn/DD2-App-de-pagos-divididos?node-id=267-1384&p=f&viewport=150%2C173%2C0.04&t=wAXegCpcZHfzIOwT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=267%3A1379&page-id=3%3A3" target="_blank" rel="noopener noreferrer" class="btn-case-visit">
+                  Ver prototipo interactivo
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. CUERPO DEL CASO DE ESTUDIO (ÍNDICE LATERAL + SECCIONES 01, 02, 03) -->
+        <section class="case-body-section">
+          <div class="case-container">
+            <div class="case-body-grid">
+              <!-- Índice lateral sticky -->
+              <aside class="case-toc" aria-label="Índice del proyecto">
+                <a href="#problema" class="case-toc-link active" data-case-section="problema">
+                  <span class="case-toc-num">01</span>
+                  El problema
+                </a>
+                <a href="#proceso" class="case-toc-link" data-case-section="proceso">
+                  <span class="case-toc-num">02</span>
+                  Proceso y diseño
+                </a>
+                <a href="#conclusiones" class="case-toc-link" data-case-section="conclusiones">
+                  <span class="case-toc-num">03</span>
+                  Conclusiones
+                </a>
+              </aside>
+
+              <!-- Columna de contenido -->
+              <div class="case-content-col">
+                <!-- 01. El problema -->
+                <article id="problema" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">01</span>
+                    <h2 class="case-block-title">La comida termina. Las cuentas, no siempre.</h2>
+                  </div>
+
+                  <p class="case-paragraph">
+                    Cuando un grupo comparte la mesa en un restaurante o cafetería, el momento de pedir la cuenta suele convertirse en una pausa incómoda entre cálculos manuales, propinas y dudas sobre cuánto debe aportar cada persona.
+                  </p>
+                  <p class="case-paragraph">
+                    <strong>Consumos distintos:</strong> no todos piden lo mismo ni consumen por igual. <strong>Grupos numerosos:</strong> calcular montos y propinas manualmente toma tiempo y genera errores. <strong>Pagos sin control:</strong> falta claridad sobre quién ya pagó y cómo respaldar el comprobante final.
+                  </p>
+
+                  <div class="case-question-box">
+                    <span class="case-question-mark">“</span>
+                    <span class="case-question-tag">LA PREGUNTA DE DISEÑO</span>
+                    <p class="case-question-quote">
+                      “¿Cómo hacer que dividir la cuenta en grupo sea tan claro, flexible y rápido como compartir la mesa?”
+                    </p>
+                  </div>
+                </article>
+
+                <!-- 02. Proceso y solución -->
+                <article id="proceso" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">02</span>
+                    <h2 class="case-block-title">De la estructura a la experiencia · Una cuenta, distintas formas de repartir</h2>
+                  </div>
+
+                  <div class="case-process-list">
+                    <div class="case-process-item">
+                      <div class="case-process-badge">01</div>
+                      <div>
+                        <h3 class="case-process-title">Wireframes y estructura base</h3>
+                        <p class="case-process-desc">
+                          Definición de los bloques esenciales de entrada —Total de la cuenta, Número de personas, Cantidad de propina y acción principal «Calcular monto»— junto a una barra de navegación inferior siempre accesible.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">02</div>
+                      <div>
+                        <h3 class="case-process-title">Sistema de diseño · Lexend y paleta cromática</h3>
+                        <p class="case-process-desc">
+                          Elección de la tipografía Lexend para asegurar alta legibilidad en cifras e importes, acompañada de una paleta de azules e índigos que transmite orden y confianza en campos de formulario y botones.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">03</div>
+                      <div>
+                        <h3 class="case-process-title">Pagos equitativos</h3>
+                        <p class="case-process-desc">
+                          Modalidad para dividir el total de la cuenta y la propina en partes exactamente iguales ajustando la cantidad de personas con controles simples (+ / −).
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">04</div>
+                      <div>
+                        <h3 class="case-process-title">Pagos por consumo y Ruleta</h3>
+                        <p class="case-process-desc">
+                          Dos alternativas adaptadas a cada salida: reparto individual según el consumo de cada persona o una ruleta interactiva donde se ingresan los nombres de los participantes para sortear el pago al azar.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">05</div>
+                      <div>
+                        <h3 class="case-process-title">Contexto móvil · Historial, código QR y comprobante</h3>
+                        <p class="case-process-desc">
+                          Pantallas finales para consultar el detalle de pagos realizados, generar un código QR con el monto exacto por persona y emitir un comprobante digital listo para descargar o compartir.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="case-decisions-card">
+                    <span class="case-decisions-label">DECISIONES CLAVE</span>
+                    <div class="case-decisions-grid">
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Tipografía Lexend de alta legibilidad
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        3 modos: equitativo, consumo y ruleta
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Cobro rápido mediante código QR
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Historial y comprobante descargable
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 03. Conclusiones -->
+                <article id="conclusiones" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">03</span>
+                    <h2 class="case-block-title">Conclusiones</h2>
+                  </div>
+
+                  <div class="case-conclusions-card">
+                    <div class="case-kpi-grid">
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">Claridad</div>
+                        <div class="case-kpi-label">Claridad al repartir: cálculo directo del total, propina y monto por persona</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">3 Modos</div>
+                        <div class="case-kpi-label">Opciones para cada grupo: equitativo, por consumo o ruleta</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">QR</div>
+                        <div class="case-kpi-label">Confirmación visual con código QR y comprobante de pago</div>
+                      </div>
+                    </div>
+
+                    <div class="case-conclusions-body">
+                      <p class="case-conclusions-text">
+                        LA CUENTA convierte el cierre de una comida grupal en una experiencia móvil ordenada, transparente y adaptable tanto a cuentas divididas en partes iguales como a consumos diferenciados.
+                      </p>
+
+                      <span class="case-learning-label">APRENDIZAJE CLAVE</span>
+                      <p class="case-learning-text">
+                        Unificar distintas modalidades de reparto bajo una misma estructura visual y un sistema de diseño consistente permite resolver escenarios cotidianos variados sin sobrecargar la interfaz.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. SHOWCASE VISUAL (MOCKUPS EN CONTEXTO) -->
+        <section class="case-showcase-section">
+          <div class="case-container">
+            <div class="case-showcase-header reveal">
+              <div>
+                <span class="section-tag">MOCKUPS DEL PRODUCTO</span>
+                <h2 class="case-showcase-title">La propuesta, en su contexto móvil</h2>
+              </div>
+              <p class="case-showcase-subtitle">
+                Wireframes, sistema de diseño, formas de repartir la cuenta y pantallas finales de pago.
+              </p>
+            </div>
+
+            <!-- Grilla de Mockups Verticales (01, 02, 03 y 04) -->
+            <div class="showcase-vertical-grid">
+              <!-- Mockup 01 -->
+              <div class="showcase-card reveal">
+                <div class="showcase-stage">
+                  <div class="mockup-screen vertical">
+                    <!-- MULTIMEDIA MOCKUP 01 -->
+                    <img src="imagenes/3Lacuenta/1cel.jpg" alt="Modalidad Ruleta en LA CUENTA" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption"></div>
+              </div>
+
+              <!-- Mockup 02 -->
+              <div class="showcase-card reveal delay-1">
+                <div class="showcase-stage">
+                  <div class="mockup-screen vertical">
+                    <!-- MULTIMEDIA MOCKUP 02 -->
+                    <img src="imagenes/3Lacuenta/2cel.jpg" alt="Pagos equitativos y cálculo por persona en LA CUENTA" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption"></div>
+              </div>
+
+              <!-- Mockup 03 -->
+              <div class="showcase-card reveal delay-2">
+                <div class="showcase-stage">
+                  <div class="mockup-screen vertical">
+                    <!-- MULTIMEDIA MOCKUP 03 -->
+                    <img src="imagenes/3Lacuenta/3cel.jpg" alt="Total más propina y generación de código QR en LA CUENTA" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption"></div>
+              </div>
+
+              <!-- Mockup 04 -->
+              <div class="showcase-card reveal delay-3">
+                <div class="showcase-stage">
+                  <div class="mockup-screen vertical">
+                    <!-- MULTIMEDIA MOCKUP 04 -->
+                    <img src="imagenes/3Lacuenta/4cel.jpg" alt="Pantalla de bienvenida e inicio de sesión de LA CUENTA" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+        <div class="case-bottom-nav">
+          <a href="proyecto-2.html" class="case-back-btn" style="margin-bottom: 0;">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Proyecto anterior: App CNS
+          </a>
+
+          <a href="proyecto-4.html" class="case-next-btn">
+            Siguiente proyecto: Sitio web TAMBO
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </main>
+
+      <!-- FOOTER INFERIOR -->
+      <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <div class="footer-copy-group">
+              <span class="footer-copyright">
+                © 2026 Fernando Vidal Catacora Gonzales. Todos los derechos reservados.
+              </span>
+            </div>
+
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/fernando_vcg_3/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/fernando-vidal-catacora-gonzales-151739361" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="https://github.com/FernandoVCG33" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+              <a href="https://www.behance.net/fernandcatacor1" target="_blank" rel="noopener noreferrer" aria-label="Behance" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

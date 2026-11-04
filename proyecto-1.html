@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Pizzería </title>
+    <meta
+      name="description"
+      content="Caso de estudio del proyecto Landing Page Pizzería: diseño y desarrollo frontend mobile-first."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="imagenes/logo_fer_fav_icon.jpg">
+  </head>
+
+  <body>
+    <div class="case-page-wrapper">
+      <!-- ==================================================================
+           HEADER / NAVEGACIÓN
+           ================================================================== -->
+      <header id="site-header" class="site-header">
+        <div class="nav-container">
+          <a href="index.html#inicio" class="brand-link">
+            <div class="brand-logo-box">
+              <img src="imagenes/logo%20fer.jpg" alt="FC logo" class="brand-logo-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-subtitle">UX Engineer</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav hidden-mobile">
+            <a href="index.html#inicio" class="nav-link">Inicio</a>
+            <a href="index.html#especialidades" class="nav-link">Especialidades</a>
+            <a href="index.html#proyectos" class="nav-link active">Proyectos</a>
+            <a href="index.html#contacto" class="nav-link">Contacto</a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg id="icon-menu" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            <svg id="icon-close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display: none;">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <a href="index.html#inicio" class="mobile-nav-link">Inicio</a>
+          <a href="index.html#especialidades" class="mobile-nav-link">Especialidades</a>
+          <a href="index.html#proyectos" class="mobile-nav-link active">Proyectos</a>
+          <a href="index.html#contacto" class="mobile-nav-link">Contacto</a>
+        </div>
+      </header>
+
+      <!-- ==================================================================
+           MAIN CONTENT — CASO DE ESTUDIO PROYECTO 01
+           ================================================================== -->
+      <main>
+        <!-- 1. HERO DEL PROYECTO -->
+        <section class="case-hero">
+          <div class="case-hero-glow"></div>
+
+          <div class="case-container">
+            <a href="index.html#proyectos" class="case-back-btn">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              Volver a proyectos
+            </a>
+
+
+            <h1 class="case-title">Landing page para</h1>
+            <p class="case-subtitle">pizzería</p>
+
+            <div class="case-tags-bar">
+              <span class="case-primary-pill">
+                <span class="case-primary-dot"></span>
+                Diseño web
+              </span>
+              <span class="case-tags-divider"></span>
+              <span class="case-tech-pill">Desarrollo Frontend</span>
+              <span class="case-tech-pill">HTML</span>
+              <span class="case-tech-pill">CSS</span>
+              <span class="case-tech-pill">JavaScript</span>
+              <span class="case-tech-pill">Responsive</span>
+              <span class="case-tech-pill">Netlify</span>
+            </div>
+
+            <!-- Imagen Principal Hero del Proyecto -->
+            <div class="case-hero-banner reveal">
+              <!-- MULTIMEDIA: Coloca aquí la ruta de la imagen principal del proyecto (ej. src="imagenes/pizzeria-hero.png") -->
+              <img src="imagenes/1%20Pizza/bannerONE.jpg" alt="Portada Landing Page Pizzería" class="case-hero-img" />
+              <div class="case-banner-overlay"></div>
+              <span class="case-banner-badge">PORTAFOLIO · DESARROLLO WEB</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. RESUMEN + FICHA TÉCNICA -->
+        <section class="case-overview-section">
+          <div class="case-container">
+            <div class="case-overview-grid reveal">
+              <div>
+                <span class="case-summary-label">RESUMEN</span>
+                <p class="case-summary-lead">
+                  Un ejercicio práctico de desarrollo web para reforzar HTML, CSS y JavaScript con una página responsiva pensada para abrir el apetito en segundos: organizar la propuesta de valor, los sabores protagonistas y el contacto directo en un recorrido sencillo y adaptable a distintos tamaños de pantalla.
+                </p>
+              </div>
+
+              <div class="case-meta-card">
+                <div class="case-meta-grid">
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ROL</span>
+                    <div class="case-meta-value">Diseño web y Frontend</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">TIPO</span>
+                    <div class="case-meta-value">Landing page</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">LENGUAJES</span>
+                    <div class="case-meta-value">HTML · CSS · JavaScript</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ESTADO</span>
+                    <div class="case-meta-value">En línea</div>
+                  </div>
+                </div>
+
+                <!-- ENLACE AL SITIO EN VIVO: Coloca aquí la URL en href="" -->
+                <a href="https://pizzas-web-site.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-case-visit">
+                  Ir al sitio
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. CUERPO DEL CASO DE ESTUDIO (ÍNDICE LATERAL + SECCIONES 01, 02, 03) -->
+        <section class="case-body-section">
+          <div class="case-container">
+            <div class="case-body-grid">
+              <!-- Índice lateral sticky -->
+              <aside class="case-toc" aria-label="Índice del proyecto">
+                <a href="#problema" class="case-toc-link active" data-case-section="problema">
+                  <span class="case-toc-num">01</span>
+                  El problema
+                </a>
+                <a href="#proceso" class="case-toc-link" data-case-section="proceso">
+                  <span class="case-toc-num">02</span>
+                  Proceso y diseño
+                </a>
+                <a href="#conclusiones" class="case-toc-link" data-case-section="conclusiones">
+                  <span class="case-toc-num">03</span>
+                  Conclusiones
+                </a>
+              </aside>
+
+              <!-- Columna de contenido -->
+              <div class="case-content-col">
+                <!-- 01. Definición del problema -->
+                <article id="problema" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">01</span>
+                    <h2 class="case-block-title">Mucho sabor. Una página clara.</h2>
+                  </div>
+
+                  <p class="case-paragraph">
+                    El reto principal consistió en organizar la propuesta de valor, los sabores y el contacto en un recorrido sencillo, adaptable a distintos tamaños de pantalla.
+                  </p>
+                  <p class="case-paragraph">
+                    Quien visitaba la página debía encontrar en una sola vista las pizzas protagonistas (como el producto premium Peperoni), conocer al equipo y la selección de ingredientes, y contar con un formulario de contacto directo al final del recorrido.
+                  </p>
+
+                  <div class="case-question-box">
+                    <span class="case-question-mark">“</span>
+                    <span class="case-question-tag">LA PREGUNTA DE DISEÑO</span>
+                    <p class="case-question-quote">
+                      “¿Cómo organizar la propuesta de valor, los sabores y el contacto de la pizzería en un recorrido sencillo y adaptable a distintos tamaños de pantalla?”
+                    </p>
+                  </div>
+                </article>
+
+                <!-- 02. Proceso y solución -->
+                <article id="proceso" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">02</span>
+                    <h2 class="case-block-title">Lenguajes utilizados y recorrido</h2>
+                  </div>
+
+                  <div class="case-process-list">
+                    <div class="case-process-item">
+                      <div class="case-process-badge">01</div>
+                      <div>
+                        <h3 class="case-process-title">HTML · Estructura</h3>
+                        <p class="case-process-desc">
+                          Organizar títulos, secciones de producto y campos del formulario con una estructura semántica clara.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">02</div>
+                      <div>
+                        <h3 class="case-process-title">CSS · Presentación y adaptación</h3>
+                        <p class="case-process-desc">
+                          Trabajar la composición visual, la maquetación responsiva para móvil y navegador, y las microanimaciones de interfaz.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">03</div>
+                      <div>
+                        <h3 class="case-process-title">JavaScript · Comportamiento</h3>
+                        <p class="case-process-desc">
+                          Añadir transiciones interactivas en el carrusel de productos y un formulario dinámico para responder a las acciones del usuario.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">04</div>
+                      <div>
+                        <h3 class="case-process-title">Producto, propuesta, equipo e ingredientes</h3>
+                        <p class="case-process-desc">
+                          Una sola página, un recorrido: inicia con las pizzas protagonistas, sabores destacados y una introducción a la propuesta de la pizzería, seguido por fotografías del equipo y la selección de ingredientes que dan continuidad al recorrido.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">05</div>
+                      <div>
+                        <h3 class="case-process-title">Contacto directo y formulario</h3>
+                        <p class="case-process-desc">
+                          Un formulario para escribir y enviar un mensaje de contacto al final de la página. El envío se acompaña de un mensaje de confirmación: «Datos enviados».
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="case-decisions-card">
+                    <span class="case-decisions-label">UNA SOLA PÁGINA, UN RECORRIDO</span>
+                    <div class="case-decisions-grid">
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Producto y propuesta protagonista
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Equipo e ingredientes en continuidad
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Contacto directo al cierre
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Confirmación: «Datos enviados»
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 03. Conclusiones -->
+                <article id="conclusiones" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">03</span>
+                    <h2 class="case-block-title">Conclusiones</h2>
+                  </div>
+
+                  <div class="case-conclusions-card">
+                    <div class="case-kpi-grid">
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">HTML</div>
+                        <div class="case-kpi-label">Estructura semántica: reforzar la organización del contenido y los campos</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">CSS</div>
+                        <div class="case-kpi-label">Maquetación responsiva: practicar diseño y adaptación visual</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">JS</div>
+                        <div class="case-kpi-label">Interacción y formulario: conectar acciones, mensajes y envío</div>
+                      </div>
+                    </div>
+
+                    <div class="case-conclusions-body">
+                      <p class="case-conclusions-text">
+                        El resultado es una landing page ligera y responsiva que ordena la propuesta de la pizzería, conectando la estructura semántica en HTML, el diseño adaptable en CSS y la interacción del formulario en JavaScript.
+                      </p>
+
+                      <span class="case-learning-label">APRENDIZAJE CLAVE</span>
+                      <p class="case-learning-text">
+                        Separar con claridad la estructura (HTML), la presentación responsiva (CSS) y el comportamiento interactivo (JavaScript) permite construir páginas claras que guían la mirada desde el producto hasta el llamado a la acción.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. SHOWCASE VISUAL (MOCKUPS EN CONTEXTO) -->
+        <section class="case-showcase-section">
+          <div class="case-container">
+            <div class="case-showcase-header reveal">
+              <div>
+                <span class="section-tag">MOCKUP DEL PRODUCTO</span>
+              </div>
+            </div>
+
+            <!-- Bento Superior (01, 02 y 03) -->
+            <div class="showcase-bento-top">
+              <div class="showcase-col-left">
+                <!-- Mockup 01: Escritorio Browser -->
+                <div class="showcase-card reveal">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen">
+                      <!-- MULTIMEDIA MOCKUP 01: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/1%20Pizza/pc1.jpg" alt="Escritorio · Portada con producto protagonista" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+
+                  </div>
+                </div>
+
+                <!-- Mockup 02: Escritorio Detalle -->
+                <div class="showcase-card reveal">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen">
+                      <!-- MULTIMEDIA MOCKUP 02: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/1%20Pizza/pc2.jpg" alt="Escritorio · Sabores destacados y recorrido" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mockup 03: Móvil Alto -->
+              <div class="showcase-col-right">
+                <div class="showcase-card reveal delay-1">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen tall">
+                      <!-- MULTIMEDIA MOCKUP 03: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/1%20Pizza/Hand_holding_smartphone_displayi…_20261003134620.jpg" alt="Móvil · Una sola página, un recorrido" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Inferior (04, 05 y 06) -->
+            <div class="showcase-bento-bottom">
+              <!-- Mockup 04: Móvil Compacto -->
+              <div class="showcase-card reveal">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 04: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/1%20Pizza/cel2.jpg" alt="Móvil · Producto premium Peperoni y botón Pídela aquí" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+
+                </div>
+              </div>
+
+              <!-- Mockup 05: Detalle Producto -->
+              <div class="showcase-card reveal delay-1">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 05: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/1%20Pizza/cel1.jpg" alt="Sección · Equipo e ingredientes" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+
+                </div>
+              </div>
+
+              <!-- Mockup 06: Tablet -->
+              <div class="showcase-card reveal delay-2">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 06: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/1%20Pizza/tab1.jpg" alt="Contacto directo · Formulario y confirmación Datos enviados" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+        <div class="case-bottom-nav">
+          <a href="index.html#proyectos" class="case-back-btn" style="margin-bottom: 0;">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Volver a proyectos
+          </a>
+
+          <a href="proyecto-2.html" class="case-next-btn">
+            Siguiente proyecto: App CNS
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </main>
+
+      <!-- FOOTER INFERIOR -->
+      <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <div class="footer-copy-group">
+              <span class="footer-copyright">
+                © 2026 Fernando Vidal Catacora Gonzales. Todos los derechos reservados.
+              </span>
+            </div>
+
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/fernando_vcg_3/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/fernando-vidal-catacora-gonzales-151739361" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="https://github.com/FernandoVCG33" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+              <a href="https://www.behance.net/fernandcatacor1" target="_blank" rel="noopener noreferrer" aria-label="Behance" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAMBO</title>
+    <meta
+      name="description"
+      content="Caso de estudio del proyecto Tambo: plataforma web cultural para descubrir eventos artísticos, cartelera escénica, directorio de artistas y reserva de entradas."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="imagenes/logo_fer_fav_icon.jpg">
+  </head>
+
+  <body>
+    <div class="case-page-wrapper">
+      <!-- ==================================================================
+           HEADER / NAVEGACIÓN
+           ================================================================== -->
+      <header id="site-header" class="site-header">
+        <div class="nav-container">
+          <a href="index.html#inicio" class="brand-link">
+            <div class="brand-logo-box">
+              <img src="imagenes/logo%20fer.jpg" alt="FC logo" class="brand-logo-img" />
+            </div>
+            <div class="brand-text">
+              <span class="brand-subtitle">UX Engineer</span>
+            </div>
+          </a>
+
+          <nav class="desktop-nav hidden-mobile">
+            <a href="index.html#inicio" class="nav-link">Inicio</a>
+            <a href="index.html#especialidades" class="nav-link">Especialidades</a>
+            <a href="index.html#proyectos" class="nav-link active">Proyectos</a>
+            <a href="index.html#contacto" class="nav-link">Contacto</a>
+          </nav>
+
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+            <svg id="icon-menu" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            <svg id="icon-close" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" style="display: none;">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <a href="index.html#inicio" class="mobile-nav-link">Inicio</a>
+          <a href="index.html#especialidades" class="mobile-nav-link">Especialidades</a>
+          <a href="index.html#proyectos" class="mobile-nav-link active">Proyectos</a>
+          <a href="index.html#contacto" class="mobile-nav-link">Contacto</a>
+        </div>
+      </header>
+
+      <!-- ==================================================================
+           MAIN CONTENT — CASO DE ESTUDIO PROYECTO 04
+           ================================================================== -->
+      <main>
+        <!-- 1. HERO DEL PROYECTO -->
+        <section class="case-hero">
+          <div class="case-hero-glow"></div>
+
+          <div class="case-container">
+            <a href="index.html#proyectos" class="case-back-btn">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              Volver a proyectos
+            </a>
+
+
+
+            <h1 class="case-title">Tambo</h1>
+            <p class="case-subtitle">La cultura se vive mejor en comunidad</p>
+
+            <div class="case-tags-bar">
+              <span class="case-primary-pill">
+                <span class="case-primary-dot"></span>
+                Desarrollo Front-End
+              </span>
+              <span class="case-tags-divider"></span>
+              <span class="case-tech-pill">Diseño Web</span>
+              <span class="case-tech-pill">VsCode</span>
+              <span class="case-tech-pill">Sistema de Diseño</span>
+              <span class="case-tech-pill">Maquetación web</span>
+              <span class="case-tech-pill">Responsive Design</span>
+            </div>
+
+            <!-- Imagen Principal Hero del Proyecto -->
+            <div class="case-hero-banner reveal">
+              <!-- MULTIMEDIA: Coloca aquí la ruta de la imagen principal del proyecto (ej. src="imagenes/tambo-hero.png") -->
+              <img src="imagenes/4%20Tambo/Banner%20entrada.jpeg" alt="Portada Sitio Web Cultural Tambo" class="case-hero-img" />
+              <div class="case-banner-overlay"></div>
+              <span class="case-banner-badge">ENCUENTRO CULTURAL</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. RESUMEN + FICHA TÉCNICA -->
+        <section class="case-overview-section">
+          <div class="case-container">
+            <div class="case-overview-grid reveal">
+              <div>
+                <span class="case-summary-label">RESUMEN</span>
+                <p class="case-summary-lead">
+                  Plataforma web cultural concebida como un espacio de encuentro digital para descubrir la cartelera de danza, música, teatro, museos y gastronomía, visibilizar a los artistas locales y adquirir entradas desde computadora o teléfono móvil.
+                </p>
+              </div>
+
+              <div class="case-meta-card">
+                <div class="case-meta-grid">
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ROL</span>
+                    <div class="case-meta-value">Desarrollador Front-End</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">TIPO</span>
+                    <div class="case-meta-value">Plataforma Web Cultural</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">STACK</span>
+                    <div class="case-meta-value">VsCode</div>
+                  </div>
+                  <div class="case-meta-item">
+                    <span class="case-meta-label">ESTADO</span>
+                    <div class="case-meta-value"> Finalizado</div>
+                  </div>
+                </div>
+
+                <!-- MULTIMEDIA: Coloca aquí la ruta o enlace de tu proyecto o prototipo en href="" -->
+                <a href="https://jolly-kataifi-72832a.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-case-visit">
+                  Visitar web
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. CUERPO DEL CASO DE ESTUDIO (ÍNDICE LATERAL + SECCIONES 01, 02, 03) -->
+        <section class="case-body-section">
+          <div class="case-container">
+            <div class="case-body-grid">
+              <!-- Índice lateral sticky -->
+              <aside class="case-toc" aria-label="Índice del proyecto">
+                <a href="#problema" class="case-toc-link active" data-case-section="problema">
+                  <span class="case-toc-num">01</span>
+                  El problema
+                </a>
+                <a href="#proceso" class="case-toc-link" data-case-section="proceso">
+                  <span class="case-toc-num">02</span>
+                  Proceso y diseño
+                </a>
+                <a href="#conclusiones" class="case-toc-link" data-case-section="conclusiones">
+                  <span class="case-toc-num">03</span>
+                  Conclusiones
+                </a>
+              </aside>
+
+              <!-- Columna de contenido -->
+              <div class="case-content-col">
+                <!-- 01. El problema -->
+                <article id="problema" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">01</span>
+                    <h2 class="case-block-title">Donde la cultura busca su propio espacio</h2>
+                  </div>
+
+                  <p class="case-paragraph">
+                    La difusión de actividades culturales, presentaciones de danza, conciertos, teatro y exposiciones suele encontrarse fragmentada entre afiches aislados y publicaciones dispersas en redes sociales. Esto dificulta que el público descubra qué eventos hay disponibles en su ciudad y cuándo asistir.
+                  </p>
+                  <p class="case-paragraph">
+                    Al mismo tiempo, los artistas, elencos y centros culturales carecen de una vitrina digital unificada que destaque su trabajo con una estética acorde al valor patrimonial y escénico de sus propuestas.
+                  </p>
+
+                  <div class="case-question-box">
+                    <span class="case-question-mark">“</span>
+                    <span class="case-question-tag">LA PREGUNTA DE DISEÑO</span>
+                    <p class="case-question-quote">
+                      “¿Cómo reunir la cartelera cultural, el talento de los artistas y la reserva de entradas en una experiencia digital clara, accesible y con identidad propia?”
+                    </p>
+                  </div>
+                </article>
+
+                <!-- 02. Proceso y diseño -->
+                <article id="proceso" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">02</span>
+                    <h2 class="case-block-title">Un solo lugar para encontrarnos con la cultura</h2>
+                  </div>
+
+                  <div class="case-process-list">
+                    <div class="case-process-item">
+                      <div class="case-process-badge">01</div>
+                      <div>
+                        <h3 class="case-process-title">Arquitectura de información y navegación</h3>
+                        <p class="case-process-desc">
+                          Organización del portal en bloques claros —Inicio, Cartelera de Eventos, Directorio de Artistas, Espacios Culturales y Entradas— para facilitar la exploración por fecha y disciplina artística.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">02</div>
+                      <div>
+                        <h3 class="case-process-title">Cartelera de eventos y directorio de artistas</h3>
+                        <p class="case-process-desc">
+                          Diseño de tarjetas de eventos con numeración editorial, fechas visibles y acceso rápido a detalles, complementadas por una sección dedicada a dar protagonismo a músicos, bailarines y elencos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">03</div>
+                      <div>
+                        <h3 class="case-process-title">Sistema visual: una paleta con raíces</h3>
+                        <p class="case-process-desc">
+                          Definición de una identidad cromática inspirada en matices culturales y tradicionales —crema cálido (#F7F5EE), guindo profundo (#4A202A), malva andino (#85485A), verde oliva (#B5B428) y carbón (#0B0A0A)— junto a una jerarquía tipográfica expresiva.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">04</div>
+                      <div>
+                        <h3 class="case-process-title">Flujo de reserva y compra de entradas</h3>
+                        <p class="case-process-desc">
+                          Construcción de componentes interactivos, menú móvil desplegable y un recorrido paso a paso para consultar horarios, elegir localidades y reservar entradas sin fricción.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="case-process-item">
+                      <div class="case-process-badge">05</div>
+                      <div>
+                        <h3 class="case-process-title">Diseño responsivo: la cultura siempre a la mano</h3>
+                        <p class="case-process-desc">
+                          Adaptación completa entre la experiencia inmersiva de escritorio (con hero escénico y agenda numerada) y la versión móvil pensada para consultar eventos y adquirir entradas desde cualquier lugar.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="case-decisions-card">
+                    <span class="case-decisions-label">DECISIONES CLAVE</span>
+                    <div class="case-decisions-grid">
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Paleta cromática con identidad cultural
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Cartelera y directorio de artistas integrados
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Flujo simplificado de reserva de entradas
+                      </div>
+                      <div class="case-decision-pill">
+                        <span class="case-decision-dot"></span>
+                        Diseño responsivo Desktop y Mobile
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- 03. Conclusiones -->
+                <article id="conclusiones" class="case-block reveal">
+                  <div class="case-block-header">
+                    <span class="case-block-num">03</span>
+                    <h2 class="case-block-title">Conclusiones</h2>
+                  </div>
+
+                  <div class="case-conclusions-card">
+                    <div class="case-kpi-grid">
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">Identidad</div>
+                        <div class="case-kpi-label">Sistema visual con raíces culturales que da protagonismo al arte y la fotografía escénica</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">Centralización</div>
+                        <div class="case-kpi-label">Cartelera, perfiles de artistas, espacios culturales y entradas integrados en un solo recorrido</div>
+                      </div>
+                      <div class="case-kpi-item">
+                        <div class="case-kpi-value">Responsive</div>
+                        <div class="case-kpi-label">Experiencia adaptable pensada para consultar la agenda desde escritorio o teléfono móvil</div>
+                      </div>
+                    </div>
+
+                    <div class="case-conclusions-body">
+                      <p class="case-conclusions-text">
+                        Tambo articula en una sola plataforma la riqueza de la agenda cultural local, conectando al público con espectáculos en vivo, artistas y espacios patrimoniales mediante una interfaz cálida, ordenada y memorable.
+                      </p>
+
+                      <span class="case-learning-label">APRENDIZAJE CLAVE</span>
+                      <p class="case-learning-text">
+                        Diseñar para el ámbito cultural requiere equilibrar una identidad visual con carácter propio y una estructura funcional que nunca compita con la fuerza expresiva de las obras y los artistas.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. SHOWCASE VISUAL (MOCKUPS EN CONTEXTO) -->
+        <section class="case-showcase-section">
+          <div class="case-container">
+            <div class="case-showcase-header reveal">
+              <div>
+                <span class="section-tag">SHOWCASE VISUAL</span>
+                <h2 class="case-showcase-title">La experiencia, en contexto</h2>
+              </div>
+              <p class="case-showcase-subtitle">
+                Vistas principales de la plataforma Tambo en escritorio, sistema de diseño y adaptación móvil.
+              </p>
+            </div>
+
+            <!-- Bento Superior (01, 02 y 03) -->
+            <div class="showcase-bento-top">
+              <div class="showcase-col-left">
+                <!-- Mockup 01 -->
+                <div class="showcase-card reveal">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen">
+                      <!-- MULTIMEDIA MOCKUP 01: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/4%20Tambo/banner%202%20m.jpg" alt="Página de inicio y hero principal de Tambo en escritorio" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+                  </div>
+                </div>
+
+                <!-- Mockup 02 -->
+                <div class="showcase-card reveal">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen">
+                      <!-- MULTIMEDIA MOCKUP 02: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/4%20Tambo/1pc.jpg" alt="Sección de cartelera de eventos y directorio de artistas" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mockup 03 -->
+              <div class="showcase-col-right">
+                <div class="showcase-card reveal delay-1">
+                  <div class="showcase-stage">
+                    <div class="mockup-screen tall">
+                      <!-- MULTIMEDIA MOCKUP 03: Coloca aquí la imagen en src="" -->
+                      <img src="imagenes/4%20Tambo/1cel.jpg" alt="Vista móvil completa del recorrido cultural en Tambo" class="mockup-img" />
+                    </div>
+                  </div>
+                  <div class="showcase-caption">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Inferior (04, 05 y 06) -->
+            <div class="showcase-bento-bottom">
+              <!-- Mockup 04 -->
+              <div class="showcase-card reveal">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 04: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/4%20Tambo/2cel.jpg" alt="Menú móvil y flujo de reserva de entradas" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+                </div>
+              </div>
+
+              <!-- Mockup 05 -->
+              <div class="showcase-card reveal delay-1">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 05: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/4%20Tambo/3pc.jpg" alt="Paleta de colores con raíces y sistema tipográfico de Tambo" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+
+                </div>
+              </div>
+
+              <!-- Mockup 06 -->
+              <div class="showcase-card reveal delay-2">
+                <div class="showcase-stage">
+                  <div class="mockup-screen square">
+                    <!-- MULTIMEDIA MOCKUP 06: Coloca aquí la imagen en src="" -->
+                    <img src="imagenes/4%20Tambo/4cel.jpg" alt="Exploración de espacios culturales, museos y artículos" class="mockup-img" />
+                  </div>
+                </div>
+                <div class="showcase-caption">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAVEGACIÓN ENTRE PROYECTOS -->
+        <div class="case-bottom-nav">
+          <a href="proyecto-3.html" class="case-back-btn" style="margin-bottom: 0;">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
+            Proyecto anterior: App LA CUENTA
+          </a>
+
+          <a href="proyecto-5.html" class="case-next-btn">
+            Siguiente proyecto: BlogDeCafé
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </main>
+
+      <!-- FOOTER INFERIOR -->
+      <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-inner">
+            <div class="footer-copy-group">
+              <span class="footer-copyright">
+                © 2026 Fernando Vidal Catacora Gonzales. Todos los derechos reservados.
+              </span>
+            </div>
+
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/fernando_vcg_3/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/fernando-vidal-catacora-gonzales-151739361" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="https://github.com/FernandoVCG33" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+              </a>
+              <a href="https://www.behance.net/fernandcatacor1" target="_blank" rel="noopener noreferrer" aria-label="Behance" class="social-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
