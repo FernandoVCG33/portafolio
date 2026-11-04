@@ -669,8 +669,8 @@ html.skip-splash .app-wrapper {
 
 .portrait-frame {
   position: relative;
-  width: 320px;
-  height: 400px;
+  width: 220px;
+  height: 300px;
   border-radius: 20px;
   overflow: hidden;
   background: #1A1A1A;
